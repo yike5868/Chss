@@ -1,0 +1,862 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="false"
+    android:orientation="vertical">
+
+    <!-- 导航 -->
+
+    <ScrollView
+        android:id="@+id/sc_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_center"
+                android:text="现存主要健康问题" />
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="脑血管疾病" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_cerebralVascularDisease"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="肾脏疾病" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_kidneyDisease"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="心脏疾病" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_heartDisease"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="血管疾病" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_vascularDisease"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="眼部疾病" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_eyeDiseases"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="神经系统疾病" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_nervousSystemDiseases"
+                    style="@style/title_public_edit_single"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="其他系统疾病" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_diseOthers"
+                    style="@style/title_public_edit_single"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_center"
+                android:text="住院治疗情况--住院史" />
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/fu_exam_item_zys" />
+
+
+                    <net.greatsoft.main.view.FuListView
+                        android:id="@+id/lv_healthExamInhos1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp" />
+
+
+                </LinearLayout>
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="病案号" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_medicalRecordNo1"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="入院日期" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_admissionDate1"
+                            style="@style/exam_list_edit"
+                            android:focusableInTouchMode="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="出院日期" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_dischargeDate1"
+                            style="@style/exam_list_edit"
+                            android:focusableInTouchMode="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="医疗机构名称" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_hospitalName1"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="原因" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_admissionReason1"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_healthExamInhos1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:text="完成" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_center"
+                android:text="住院治疗情况--家庭病床史" />
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/fu_exam_item_jtbcs" />
+
+                    <net.greatsoft.main.view.FuListView
+                        android:id="@+id/lv_healthExamInhos2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="病案号" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_medicalRecordNo2"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="建床日期" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_admissionDate2"
+                            style="@style/exam_list_edit"
+                            android:focusableInTouchMode="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="撤床日期" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_dischargeDate2"
+                            style="@style/exam_list_edit"
+                            android:focusableInTouchMode="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="医疗机构名称" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_hospitalName2"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="原因" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_admissionReason2"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_healthExamInhos2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:text="完成" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_center"
+                android:text="住院治疗情况--主要用药情况" />
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/fu_exam_item_yyqk" />
+
+                    <net.greatsoft.main.view.FuListView
+                        android:id="@+id/lv_healthExamDrug"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="药物名称" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_drugName"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="用法" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_drugUsageCode"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="用量" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_drugDose"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="用药时间" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_drugTime"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_drugCompliance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal">
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_healthExamDrug"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:text="完成" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_center"
+                android:text="住院治疗情况--非免疫规划预防接种史" />
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/fu_exam_item_jzs" />
+
+                    <net.greatsoft.main.view.FuListView
+                        android:id="@+id/lv_healthExamNoplanVacc"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="名称" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_vaccineCode"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="接种日期" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_vaccinationDate"
+                            style="@style/exam_list_edit"
+                            android:focusableInTouchMode="false" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/exam_list_text"
+                            android:text="接种机构" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_vaccinationOrgName"
+                            style="@style/exam_list_edit" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_healthExamNoplanVacc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:text="完成" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="健康评价" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_healthAbnorm"
+                    style="@style/title_public_edit_single"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="异常1" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_healthAbnormDesc1"
+                    style="@style/title_public_edit_single"
+                    fu:maxByteLength="100"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="异常2" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_healthAbnormDesc2"
+                    style="@style/title_public_edit_single"
+                    fu:maxByteLength="100"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="异常3" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_healthAbnormDesc3"
+                    style="@style/title_public_edit_single"
+                    fu:maxByteLength="100"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="异常4" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_healthAbnormDesc4"
+                    style="@style/title_public_edit_single"
+                    fu:maxByteLength="100"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="健康指导" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    android:id="@+id/ll_healthGuidance"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="危险因素控制" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <LinearLayout
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_wxyskz_01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_isSmoking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="戒烟 " />
+
+                        <CheckBox
+                            android:id="@+id/cb_isDrinking"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="健康饮酒" />
+
+                        <CheckBox
+                            android:id="@+id/cb_isFood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="饮食" />
+
+                        <CheckBox
+                            android:id="@+id/cb_isExercise"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="锻炼" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_wxyskz_03"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_isLost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="减体重,目标 " />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_lost"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_vaccination"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="建议接种疫苗" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_vaccination"
+                            android:layout_width="50dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6.0dip"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/cb_other"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="其他" />
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_other"
+                            android:layout_width="50dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6.0dip"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="录入机构" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_orgName"
+                    style="@style/title_public_edit_single" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="录入人" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_creator"
+                    style="@style/title_public_edit" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="录入时间" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_createTime"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

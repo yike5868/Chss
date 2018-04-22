@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="170dip"
+        android:layout_height="50dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:text="扫一扫"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/tv_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dip"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_diahy"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="血压（mmHg）*:"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_xy"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="0px"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="/"
+                android:textSize="29sp" />
+
+            <EditText
+                android:id="@+id/et_xy2"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:nextFocusForward="@+id/et_xl"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/text_diahy"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="心率（次/分钟）*: "
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_xl"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext"
+                android:inputType="numberDecimal"
+                android:nextFocusForward="@+id/et_sg"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="150dip"
+        android:layout_height="40dip"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:text="保存"
+        android:textColor="#fff" />
+
+</LinearLayout>

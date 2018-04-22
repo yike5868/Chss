@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:cb="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:background="#fff"
+              android:descendantFocusability="blocksDescendants"
+              android:gravity="center_vertical"
+              android:minHeight="60dp"
+              android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text=""
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/font_large"/>
+
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_name"
+                android:background="#BFC1C2"/>
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_num_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/view_1"
+                android:text=""
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/font_middl"/>
+
+            <View
+                android:id="@+id/view_2"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_num_sex"
+                android:background="#BFC1C2"/>
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/view_2"
+                android:text=""
+                android:textColor="@color/bg_black"
+                android:textSize="@dimen/font_middl"/>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="right">
+
+                <net.greatsoft.main.view.CircleButton
+                    android:id="@+id/cb_old"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/cb_hyper"
+                    android:background="@null"
+                    android:textSize="@dimen/font_large"
+                    android:visibility="gone"
+                    cb:cb_type="0"/>
+
+                <net.greatsoft.main.view.CircleButton
+                    android:id="@+id/cb_hyper"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/cb_diabetes"
+                    android:background="@null"
+                    android:textSize="@dimen/font_large"
+                    android:visibility="gone"
+                    cb:cb_type="1"/>
+
+                <net.greatsoft.main.view.CircleButton
+                    android:id="@+id/cb_diabetes"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/cb_smi"
+                    android:background="@null"
+                    android:textSize="@dimen/font_large"
+                    android:visibility="gone"
+                    cb:cb_type="2"/>
+
+                <net.greatsoft.main.view.CircleButton
+                    android:id="@+id/cb_smi"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:textSize="@dimen/font_small"
+                    android:visibility="gone"
+                    cb:cb_type="3"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/public_id"
+            android:drawablePadding="5dp"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/font_middl"/>
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@mipmap/public_adress"
+            android:drawablePadding="5dp"
+            android:text="地址"
+            android:textColor="@color/bg_black"
+            android:textSize="@dimen/font_middl"/>
+    </LinearLayout>
+
+
+    <!--<net.greatsoft.main.view.FuImageView-->
+    <!--android:id="@+id/iv_right"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginRight="20dp"-->
+    <!--android:src="@mipmap/public_go" />-->
+
+</LinearLayout>

@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_btn_bg_pressed_color"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--  医疗费用支付  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="医疗费用支付"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_medicalPayWay"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+
+            <!--  药物过敏史  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="药物过敏史"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_drugAllergy"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+            <!--  暴露史  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="暴露史"/>
+
+            <LinearLayout
+                android:id="@+id/ll_exposureHistory"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+            <!--  既往史  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="既往史"/>
+
+            <LinearLayout
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="疾病"
+                    android:textSize="@dimen/font_small"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_personDisease"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1 无"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="2"
+                            android:text="2 高血压"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="3"
+                            android:text="3 糖尿病"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="4"
+                            android:text="4 冠心病"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="5"
+                            android:text="5 慢性阻塞性肺疾病"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="6"
+                            android:text="6 恶性肿瘤"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_name_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_6"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="7"
+                            android:text="7 脑卒中"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="8"
+                            android:text="8 严重精神障碍"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="9"
+                            android:text="9 结核病"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="10"
+                            android:text="10 肝炎"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="11"
+                            android:text="11 其他法定传染病"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="12"
+                            android:text="12 职业病"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_name_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_12"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_personDisease_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:tag="13"
+                            android:text="13 其他"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_name_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_personDisease_date_13"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:digits="0123456789."
+                            android:hint="YYYYMM"
+                            android:inputType="number"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="手术"
+                    android:textSize="@dimen/font_small"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_choiceStatus11"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="否"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_choiceStatus12"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="是"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="1.名称"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_historyName11"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="  时间"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_confirmDate11"
+                            android:inputType="datetime"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="2.名称"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_historyName12"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="  时间"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_confirmDate12"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="外伤"
+                    android:textSize="@dimen/font_small"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_choiceStatus21"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="否"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_choiceStatus22"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="是"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="1.名称"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_historyName21"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="  时间"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_confirmDate21"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="2.名称"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_historyName22"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="  时间"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_confirmDate22"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:text="输血"
+                    android:textSize="@dimen/font_small"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rb_choiceStatus31"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="否"/>
+
+                            <RadioButton
+                                android:id="@+id/rb_choiceStatus32"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="是"/>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"/>
+
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="1.名称"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_historyName31"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="  时间"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_confirmDate31"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="2.名称"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_historyName32"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            style="@style/fuMemberAddDiseaseTxt"
+                            android:text="  时间"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_confirmDate32"
+                            style="@style/fuMemberAddDiseaseET"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--  家族史  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="家族史"/>
+
+            <LinearLayout
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="父        亲"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/ll_familyDiseaseHistoryFather"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_corner"
+                        android:hint="1"
+                        android:minHeight="40dp"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/ll_familyDiseaseHistoryFatherelse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_corner"
+                        android:hint="填写其他"
+                        android:minHeight="40dp"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:text="母亲"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/ll_familyDiseaseHistoryMother"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_corner"
+                        android:hint="1"
+                        android:minHeight="40dp"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/ll_familyDiseaseHistoryMotherelse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_corner"
+                        android:hint="填写其他"
+                        android:minHeight="40dp"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_familyDisease1"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="兄弟姐妹"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/ll_familyDiseaseHistorySiblings"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_corner"
+                        android:hint="1"
+                        android:minHeight="40dp"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/ll_familyDiseaseHistorySiblingselse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_corner"
+                        android:hint="填写其他"
+                        android:minHeight="40dp"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:text="子女"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/ll_familyDiseaseHistoryChildren"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_corner"
+                        android:hint="1"
+                        android:minHeight="40dp"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/ll_familyDiseaseHistoryChildrenelse"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_corner"
+                        android:hint="填写其他"
+                        android:minHeight="40dp"
+                        android:paddingLeft="5dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_familyDisease"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+            <!--  遗传病史  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="遗传病史"/>
+
+            <LinearLayout
+                android:id="@+id/ll_geneticDiseaseHistory"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+            <!--  残疾情况  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="残疾情况"/>
+
+            <LinearLayout
+                android:id="@+id/ll_disability"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout"/>
+
+    <!--  儿童花名册(专档)  -->
+    <!-- 基本信息 -->
+    <ScrollView
+        android:id="@+id/parent_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="儿童信息"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="姓名"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_newbornName"
+                    style="@style/public_input_edit"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="性别"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tV_newbornSexCode"
+                    style="@style/public_input_edit"
+                    android:textColor="@color/text_enble"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="出生日期"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_newbornBirthDate"
+                    style="@style/public_input_edit"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="身份证号"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_newbornIdNo"
+                    style="@style/public_input_edit"
+                    android:textColor="@color/text_enble"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="家庭住址"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_presentAddrProvince"
+                    style="@style/public_input_edit_single"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="是否建立儿童保健手册*"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_childrenBookIsBuild"
+                    style="@style/public_input_layout"
+                    android:orientation="vertical"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="是否体弱儿"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_isWeakChildren"
+                    style="@style/public_input_layout"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="建册时间*"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_childrenBookBuildDate"
+                    style="@style/public_input_edit"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="出生孕周"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_birthGestWeeks"
+                    style="@style/public_input_edit"
+                    android:layout_width="30dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    app:maxByteLength="3,0"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="周"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_small"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_birthGestDays"
+                    style="@style/public_input_edit"
+                    android:layout_width="30dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    app:maxByteLength="3,0"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="天"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_small"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="母亲妊娠期患病情况"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_motherHdcpCode"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="助产机构名称"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_deliveryOrgName"
+                    style="@style/public_input_edit_single"
+                    app:maxByteLength="70"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="出生情况"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_chushengqingkuang"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="新生儿窒息"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_asphyxiaCode"
+                    style="@style/public_input_layout"
+                    android:orientation="vertical"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="30dp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_suffocationType"
+                    style="@style/public_input_layout"
+                    android:layout_width="130dp"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="畸形"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_malformCode"
+                    style="@style/public_input_layout"
+                    android:orientation="vertical"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="手工结案"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_closeCaseCode"
+                    style="@style/public_input_layout"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="原因"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_closeCaseReason"
+                    style="@style/public_input_edit_single"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="监护人信息"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="父亲"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_fatherName"
+                    style="@style/public_input_edit"
+                    android:drawableRight="@mipmap/down_mark"
+                    android:paddingRight="10dp"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="联系电话"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_fatherTelNo"
+                    style="@style/public_input_edit"
+                    app:maxByteLength="30"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="工作单位"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_fatherWorkUnit"
+                    style="@style/public_input_edit_single"
+                    app:maxByteLength="100"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="母亲"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_motherName"
+                    style="@style/public_input_edit"
+                    android:drawableRight="@mipmap/down_mark"
+                    android:paddingRight="10dp"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="联系电话"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_motherTelNo"
+                    style="@style/public_input_edit"
+                    app:maxByteLength="30"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="工作单位"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_motherWorkUnit"
+                    style="@style/public_input_edit_single"
+                    app:maxByteLength="100"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="其他监护人"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_guardian"
+                    style="@style/public_input_edit"
+                    app:maxByteLength="100"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="监护人关系"/>
+
+                <Spinner
+                    android:id="@+id/sp_guardianRelation"
+                    style="@style/public_input_edit"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="联系电话"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_guardianTelNo"
+                    style="@style/public_input_edit"
+                    app:maxByteLength="30"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="工作单位"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_guardianWorkUnit"
+                    style="@style/public_input_edit"
+                    app:maxByteLength="100"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="联系地址"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_guardianAddress"
+                    style="@style/public_input_edit_single"
+                    app:maxByteLength="200"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="被调查人"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_respondent"
+                    style="@style/public_input_edit"
+                    app:maxByteLength="100"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="被调查时间"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_investigateDate"
+                    style="@style/public_input_edit"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

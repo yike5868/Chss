@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_btn_bg_pressed_color"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--  户籍信息  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="户籍信息"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="常住类型    "
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_residenceType"
+                    style="@style/title_public_edit_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="户籍类型    "
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_householdType"
+                    style="@style/title_public_edit_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuGPPersonHistoryContent"
+                    android:layout_weight="2"
+                    android:text="民族            "
+                    />
+
+                <View
+                    style="@style/FuGPPersonHistoryContent"
+                    />
+
+                <Spinner
+                    android:id="@+id/sp_nationality"
+                    style="@style/title_public_spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="血型            "
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_aboCode"
+                    style="@style/title_public_edit_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="RH阴性       "
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_RHCode"
+                    style="@style/title_public_edit_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="文化程度    "
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_educationCode"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="职业            "
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_occupation"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="婚姻状况    "
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_marriage"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

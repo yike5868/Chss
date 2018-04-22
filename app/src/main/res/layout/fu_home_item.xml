@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.greatsoft.main.view.FuImageView
+        android:id="@+id/iv_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/member"
+        android:layout_marginTop="15dip"
+        android:layout_marginRight="20dp"
+        android:adjustViewBounds="true"
+        />
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_oval_green"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:text="12"
+        />
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_main"
+        android:textSize="26sp"
+        android:text="入户随访"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEDEF"
+    android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <net.greatsoft.main.view.DashedLineView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <net.greatsoft.main.view.CircleButton
+                android:id="@+id/cb_relation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="户主"
+                custom:cb_type="3" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="姓名：无" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="性别：无" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="年龄：无" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_telNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="电话：无" />
+            </LinearLayout>
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="无" />
+        </LinearLayout>
+
+        <net.greatsoft.main.view.CircleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            custom:cb_type="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <net.greatsoft.main.view.DashedLineView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <net.greatsoft.main.view.FuImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null" />
+
+        </FrameLayout>
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_fu_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上次随访：无 预约：无" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <net.greatsoft.main.view.DashedLineView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <net.greatsoft.main.view.FuImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null" />
+
+        </FrameLayout>
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_fu_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="随访人：无" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <net.greatsoft.main.view.FuButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="血压" />
+
+        <net.greatsoft.main.view.FuButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="血糖" />
+
+        <net.greatsoft.main.view.FuButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="医诊" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_info2"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_hd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="高、糖随访" />
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="体检" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

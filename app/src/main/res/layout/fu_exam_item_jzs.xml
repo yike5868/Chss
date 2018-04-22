@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_vaccineCode"
+        style="@style/exam_list_title"
+        android:text="名称"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_vaccinationDate"
+        style="@style/exam_list_title"
+        android:text="接种日期"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_vaccinationOrgName"
+        style="@style/exam_list_title"
+        android:text="接种机构"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_delete"
+        style="@style/exam_list_title"
+        android:layout_width="60dp"
+        android:layout_weight="0"
+        android:text="操作"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small" />
+
+</LinearLayout>

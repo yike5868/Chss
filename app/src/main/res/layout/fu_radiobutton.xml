@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.greatsoft.main.view.FuRadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/public_form_raido"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp"
+    android:textSize="@dimen/check_small">
+
+</net.greatsoft.main.view.FuRadioButton>

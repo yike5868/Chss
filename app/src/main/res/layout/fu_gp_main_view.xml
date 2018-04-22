@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<include layout="@layout/fu_public_title_layout" />
+    <net.greatsoft.main.view.FuButton
+        android:id="@+id/btn_appointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="电话预约"
+        android:textSize="38sp"
+
+        />
+
+    <net.greatsoft.main.view.FuButton
+        android:id="@+id/btn_follow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="随访"
+        android:textSize="38sp"
+
+        />
+
+    <net.greatsoft.main.view.FuButton
+        android:id="@+id/btn_statistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="统计"
+        android:textSize="38sp"
+
+        />
+
+
+
+
+</LinearLayout>

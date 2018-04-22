@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout" />
+
+    <ListView
+        android:id="@+id/lv_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:minHeight="80dp"
+        android:orientation="horizontal">
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/btn_member_add"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:layout_gravity="center_vertical"
+            android:textColor="#48A6FE"
+            app:image="@mipmap/amily_move_add_default"
+            app:text="新增"
+            app:type="left" />
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_into"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="迁入" />
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="标记"
+            android:visibility="gone" />
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/btn_edit_family"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+
+            android:layout_gravity="center_vertical"
+            android:textColor="#48A6FE"
+            app:image="@mipmap/family_edit_default"
+            app:text="编辑家庭"
+            app:type="left" />
+    </LinearLayout>
+
+</LinearLayout>

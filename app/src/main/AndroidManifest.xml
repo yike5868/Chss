@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="net.greatsoft.main"
+          android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application
+        android:name="net.greatsoft.main.FuApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme">
+        <meta-data
+            android:name="FU_CHANNEL"
+            android:value="channel"/>
+
+        <activity
+
+            android:name="net.greatsoft.main.activity.FuInitNavActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:theme="@style/AppSplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="net.greatsoft.main.activity.FuRhsfActivity"/>
+
+        <activity
+            android:name="net.greatsoft.main.activity.FuContentActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+
+        <activity
+            android:name="net.greatsoft.main.MainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+
+        <activity
+            android:name="net.greatsoft.main.activity.FuLanuachActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+
+        <activity
+            android:name="net.greatsoft.main.activity.FuChangeActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+
+        <activity
+            android:name="net.greatsoft.main.activity.FuParentActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+
+        <activity
+            android:name="net.greatsoft.main.activity.FuMainActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+
+        <activity
+            android:name="net.greatsoft.main.activity.FuExamActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+
+        <activity
+            android:name="net.greatsoft.main.activity.FuLoginRegistActivity"
+            android:configChanges="screenSize|orientation|keyboardHidden"/>
+
+        <meta-data android:value="5919132b3eae256589000b81" android:name="UMENG_APPKEY"/>
+        <meta-data android:value="ehr" android:name="UMENG_CHANNEL"/>
+
+    </application>
+
+</manifest>

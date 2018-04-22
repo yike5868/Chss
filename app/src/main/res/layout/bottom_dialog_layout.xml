@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                      xmlns:app="http://schemas.android.com/apk/res-auto"
+                      android:id="@+id/allayout_main"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:background="@color/white"
+                      android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_hyper"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_followup"
+            app:text="高血压"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_diabetes"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_followup"
+            app:text="糖尿病"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_exam"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_test"
+            app:text="体检"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_hyper_info"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_hyperinfo"
+            app:text="高血压专档"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_coronaryHeart_info"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_coronaryinfo"
+            app:text="冠心病专档"/>
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_maternal_register"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_maternal02"
+            app:text="孕产登记"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_cerebral_info"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_cerebralinfo"
+            app:text="脑卒中专档"/>
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_child_info"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_childinfo"
+            app:text="儿童专档"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_tuberculosis_info"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_tuberculosisinfo"
+            app:text="肺结核专档"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_elder_info"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_oldinfo"
+            app:text="老年人花名册"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_diabetes_info"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_diabetesinfo"
+            app:text="糖尿病专档"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_smi"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_followup"
+            app:text="严重精神障碍\n患者随访"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_smi_info"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_tuberfirst"
+            app:text="严重精神障碍\n患者个人补充信息"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_selfcare"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_oneself"
+            app:text="老年人\n自理能力评估"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_cognition"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_cognition"
+            app:text="老年人\n认知功能"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_depressed"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_followup"
+            app:text="老年人抑郁"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_elder_tcm"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_eldertl"
+            app:text="老年人\n中医药健康管理"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_child_health_1"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_child01"
+            app:text="新生儿"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_child_health_2"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_child02"
+            app:text="1~8月"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_child_health_3"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_child03"
+            app:text="12~30月"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_child_health_4"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_child04"
+            app:text="3~6岁"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_maternal_1"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_maternal01"
+            app:text="第一次\n产前随访"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_maternal_2"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_maternal02"
+            app:text="第2~5次\n产前随访"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_maternal_3"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_maternal03"
+            app:text="产后访视"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_disability_hear"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_disabiltiy01"
+            app:text="听力言语残疾\n随访表"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_disability_intelligence"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_disability02"
+            app:text="智力残疾\n随访表"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_disability_limb"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_disabiltiy03"
+            app:text="肢体残疾\n随访表"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_disability_visul"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_disability04"
+            app:text="视力残疾\n随访表"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_maternal_4"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_maternal04"
+            app:text="产后42天\n健康检查"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_tuberculosisFirstFollowUp"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_information"
+            app:text="肺结核患者\n第一次入户随访"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_tuberculosisFollowUp"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_followup"
+            app:text="肺结核\n患者随访"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_cdcVaccreport"
+            style="@style/ListDialogStyle"
+            app:image="@mipmap/maternal_4"
+            app:text="预防接种卡"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_cdcVaccreportVaccinate"
+            style="@style/ListDialogStyle"
+            app:image="@mipmap/maternal_4"
+            app:text="接种记录"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_chd"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_followup"
+            app:text="冠心病"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_ca"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_followup"
+            app:text="脑卒中"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_edit"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_edit"
+            app:text="编辑"/>
+
+        <net.greatsoft.main.view.ImageTextButton
+            android:id="@+id/itb_delete"
+            style="@style/ListDialogStyle"
+            app:image="@drawable/bg_pop_move"
+            app:text="删除"/>
+    </LinearLayout>
+</HorizontalScrollView>
+

@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout"/>
+
+    <ScrollView
+        android:id="@+id/parent_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 孕产登记 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="姓名"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_name"
+                    style="@style/public_input_edit"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="出生日期"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_birthDate"
+                    style="@style/public_input_edit"
+                    android:textColor="@color/text_enble"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="民族"
+                    android:textColor="@color/text_enble"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_nation"
+                    style="@style/public_input_edit_single"
+                    android:textColor="@color/text_enble"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="学历"
+                    android:textColor="@color/text_enble"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_xueli"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical"
+                    android:textColor="@color/text_enble"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="工作单位"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_workUnit"
+                    style="@style/public_input_edit_single"
+                    app:maxByteLength="100"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="职业"
+                    android:textColor="@color/text_enble"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_zhiye"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical"
+                    android:textColor="@color/text_enble"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="丈夫姓名"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_husbandName"
+                    style="@style/public_input_edit"
+                    android:drawableRight="@mipmap/down_mark"
+                    android:paddingRight="10dp"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="工作单位"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_husbandUnit"
+                    style="@style/public_input_edit"
+                    app:maxByteLength="100"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="电话"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_husbandTelNo"
+                    style="@style/public_input_edit"
+                    app:maxByteLength="128"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="住址"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_address"
+                    style="@style/public_input_edit"
+                    app:maxByteLength="200"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="月经周期"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_mensesPeriod"
+                    style="@style/public_input_edit"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:inputType="number"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_weight="0"
+                    android:width="20dp"
+                    android:text="量"/>
+
+                <Spinner
+                    android:id="@+id/sp_mensesMeasure"
+                    style="@style/public_input_edit"
+                    android:layout_width="40dp"
+                    android:layout_weight="1"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="末次月经*"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_mensesLastDate"
+                    style="@style/public_input_edit"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="预产期"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_expectedChildBirthday"
+                    style="@style/public_input_edit"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="现有子女数"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_childrenCount"
+                    style="@style/public_input_edit"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="建册时间*"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_buildingManualDate"
+                    style="@style/public_input_edit"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="100dp"
+                    android:text="是否建立《孕产妇保健手册》*"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_buildingManualCode"
+                    style="@style/public_input_layout"
+                    android:layout_width="60dp"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="孕产史"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_yunchanshi"
+                    style="@style/public_input_layout_single"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="其中"/>
+
+                <LinearLayout
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="自然产次"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/et_spontaneousAbortionCount"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="number"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="次，人工流产"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/et_artificialAbortionCount"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="number"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="次，药物流产"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/et_drugAbortionCount"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:inputType="number"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small"/>
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="次"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="既往史"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_jiwangshi"
+                    style="@style/public_input_layout_single"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="家族史"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_jiazushi"
+                    style="@style/public_input_layout_single"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="本次妊娠情况"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_renshen"
+                    style="@style/public_input_layout_single"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="计划内妊娠"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_pregnancyInplan"
+                    style="@style/public_input_layout"
+                    android:orientation="vertical"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="前次妊娠"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_pregnancyLasttime"
+                    style="@style/public_input_edit"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="孕次"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_gravidity"
+                    style="@style/public_input_edit"
+                    android:inputType="number"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="产次"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_parity"
+                    style="@style/public_input_edit"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="收缩压"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_sbp"
+                    style="@style/public_input_edit"
+                    android:layout_width="40dp"
+                    android:inputType="number"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="mmHg"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_small"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="舒张压"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_dbp"
+                    style="@style/public_input_edit"
+                    android:layout_width="40dp"
+                    android:inputType="number"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="mmHg"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_small"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="体重"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_weight"
+                    style="@style/public_input_edit"
+                    android:layout_width="40dp"
+                    android:inputType="numberDecimal"
+                    app:maxByteLength="6,2"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="kg"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_small"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="身高"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_height"
+                    style="@style/public_input_edit"
+                    android:layout_width="40dp"
+                    android:inputType="numberDecimal"
+                    app:maxByteLength="5,1"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="cm"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_small"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="体质指数"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_bmi"
+                    style="@style/public_input_edit"
+                    android:layout_width="40dp"
+                    android:inputType="numberDecimal"
+                    app:maxByteLength="5,3"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="kg/m²"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_small"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_edit"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="备注"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_remark"
+                    style="@style/public_input_edit_single"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="手工结案"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_closeCaseCode"
+                    style="@style/public_input_layout_single"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="原因"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_closeCaseReason"
+                    style="@style/public_input_edit_single"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

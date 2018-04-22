@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <net.greatsoft.main.view.FuButton
+        android:id="@+id/btn_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="地区" />
+
+    <net.greatsoft.main.view.FuButton
+        android:id="@+id/btn_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="小区" />
+
+    <net.greatsoft.main.view.FuButton
+        android:id="@+id/btn_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="楼栋" />
+
+</LinearLayout>

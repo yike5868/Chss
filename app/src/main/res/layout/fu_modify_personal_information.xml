@@ -1,0 +1,320 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout" />
+
+    <ScrollView
+        android:id="@+id/parent_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 居(村)委会 -->
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/committee" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <TextView
+                    android:id="@+id/et_committee"
+                    style="@style/title_public_text" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/residential" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <Spinner
+                    android:id="@+id/sp_subDistrict"
+                    style="@style/title_public_spinner" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/building" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <Spinner
+                    android:id="@+id/sp_building"
+                    style="@style/title_public_spinner" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/name" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_memberName"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/formerName" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_formerName"
+                    style="@style/title_public_edit" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/idNo" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_idNumber"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/birthday" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_birthday"
+                    style="@style/title_public_edit" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/sex" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <Spinner
+                    android:id="@+id/sp_gender"
+                    style="@style/title_public_spinner" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+            <!-- 家庭地址 -->
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/address" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_ADDRESS"
+                    style="@style/title_public_edit"
+                    android:layout_width="272dp"
+                    android:layout_weight="3" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/householdAddress" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_houseHoldAddress"
+                    style="@style/title_public_edit"
+                    android:layout_width="272dp"
+                    android:layout_weight="3" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    android:id="@+id/relation_t1"
+                    style="@style/title_public_text"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/relation" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <Spinner
+                    android:id="@+id/sp_relation"
+                    style="@style/title_public_spinner" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/workUnit" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_workUnit"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/contactName" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_connectName"
+                    style="@style/title_public_edit" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/contactTelNo" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_connectPhone"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/fixedPhones" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_mobilePhone"
+                    style="@style/title_public_edit" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/telNo" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_phone"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+
+            <LinearLayout
+                style="@style/title_public_linear">
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/paperArchiveDate" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_paperArchiveDate"
+                    style="@style/title_public_edit" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <TextView
+                    style="@style/title_public_text"
+                    android:text="@string/paperCardNum" />
+
+                <include layout="@layout/fu_view_vertical" />
+
+                <EditText
+                    android:id="@+id/et_paperCardNum"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.0dip"
+                android:background="#000000" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

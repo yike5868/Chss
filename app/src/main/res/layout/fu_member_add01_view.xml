@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_btn_bg_pressed_color"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--  基本信息  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="基本信息"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="村(居)委会"
+                    />
+
+                <Spinner
+                    android:id="@+id/sp_committee"
+                    style="@style/FuMember_spinner"
+                    android:background="@drawable/bg_corner"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuGPPersonHistoryContent"
+                    android:layout_weight="2"
+                    android:text="小区"
+                    />
+
+                <View
+                    style="@style/FuGPPersonHistoryContent"
+                    />
+
+                <Spinner
+                    android:id="@+id/sp_residential"
+                    style="@style/FuMember_spinner"
+                    android:layout_weight="2"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuGPPersonHistoryContent"
+                    android:layout_weight="2.5"
+                    android:text="楼栋"
+                    />
+
+                <View
+                    style="@style/FuGPPersonHistoryContent"
+                    />
+
+                <Spinner
+                    android:id="@+id/sp_building"
+                    style="@style/FuMember_spinner"
+                    android:layout_weight="2.5"/>
+
+            </LinearLayout>
+
+            <!--  个人信息  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="个人信息"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent01"
+                    android:layout_width="62dp"
+                    android:text="姓        名"/>
+
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_name"
+                    style="@style/FuMemberEdit01"
+                    android:layout_width="118dp"/>
+
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent02"
+                    android:text="曾用名"
+                    />
+
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_formerName"
+                    style="@style/FuMemberEdit02"
+                    />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="身份证号"
+                    />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_idNo"
+                    style="@style/FuMember_spinner"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_corner"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuGPPersonHistoryContent"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:text="出生日期"
+                    />
+
+                <View
+                    android:id="@+id/view"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"></View>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_birthday"
+                    style="@style/FuMember_spinner"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_corner"
+                    android:clickable="true"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:text="1991-10-10"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuGPPersonHistoryContent"
+                    android:layout_weight="3"
+                    android:text="性        别"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/ll_sex"
+                    style="@style/FuGPPersonHistoryLinearLayout"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="家庭住址"
+                    />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_address"
+                    style="@style/FuMember_spinner"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_corner"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="户籍住址"
+                    />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_householdAddress"
+                    style="@style/FuMember_spinner"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_corner"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:text="工作单位"
+                    />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_workUnit"
+                    style="@style/FuMember_spinner"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bg_corner"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent01"
+                    android:text="手 机 号 码"
+                    />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_telNo"
+                    style="@style/FuMemberEdit01"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    />
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent01"
+                    android:layout_width="80dp"
+                    android:text="固定电话"
+                    />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_fixedPhones"
+                    style="@style/FuMemberEdit01"
+                    android:layout_width="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent01"
+                    android:text="联系人姓名"
+                    />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_contactName"
+                    style="@style/FuMemberEdit01"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    />
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent01"
+                    android:layout_width="80dp"
+                    android:text="联系人电话"
+                    />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_contactTelNo"
+                    style="@style/FuMemberEdit01"
+                    android:layout_width="100dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:layout_width="80dp"
+                    android:layout_weight="1"
+                    android:text="与户主关系"/>
+
+                <Spinner
+                    android:id="@+id/sp_relation"
+                    style="@style/title_public_spinner2"
+                    android:layout_width="80dp"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent"
+                    android:layout_width="80dp"
+                    android:layout_weight="1"
+                    android:text="其他联系方式"
+                    />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_elseContact"
+                    style="@style/FuMember_spinner"
+                    android:layout_width="120dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_corner"
+                    android:gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent01"
+                    android:text="纸质建档时间"
+                    />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_paperArchiveDate"
+                    style="@style/FuMemberEdit01"
+                    />
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuMemberContent02"
+                    android:layout_width="20dp"
+                    android:text="编号"
+                    />
+
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_paperCardNum"
+                    style="@style/FuMemberEdit02"
+                    android:layout_width="160dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

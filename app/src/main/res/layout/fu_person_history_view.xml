@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_btn_bg_pressed_color"
+              android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--  症状  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="症状"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <!--症状-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_recordChoice"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="咳嗦、发烧啊啊省略号没爱我个哦IE溶解哦v我局女fggbff rttherh ertfher恩女噢诶"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout"
+                android:layout_marginTop="20dp">
+
+                <!--日吸烟量-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_dailySmoking"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="日吸烟量： 1/10支"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--日饮酒量-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_dailyDrinking"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="日饮酒量： 1/10两"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--摄盐量-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_saltTakenLevelCode"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="摄盐量： 轻"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <!--运动频率-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_exerciseFreqCode"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="运动： 5次/每周 6分钟/次 5次/每周 6分钟/次"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--主食-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_dailyStaple"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:layout_weight="2"
+                    android:text="主食：1/10克/每天"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <!--心理调整-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_psyAdjustResultCode"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:layout_weight="2"
+                    android:text="心理调整： 良好"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--遵医行为-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_complianceResultCode"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="遵医行为： 一般"/>
+
+            </LinearLayout>
+
+            <!--  数据  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="数据"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <!--血压-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_bp"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="血压： 156/102mnhg"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--心率-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_heartRate"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="心率： 98次/分钟"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--身高-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_height"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="身高： 179cm"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <!--体重-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_weight"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="体重： 70kg"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--空腹血糖值-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_fbg"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="空腹血糖值： 70mmol/L"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--糖化血红蛋白-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_ghb"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="糖化血红蛋白： 7.2"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#8cca9b"
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </LinearLayout>
+
+            <!--  用药  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="用药"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <!--药物名称-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_medicationName"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="药物名称： 阿莫西林（口服药剂）"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <!--用法-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_drugUsingFreq"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="用法： 每周一次"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--用量-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_drugPerDose"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="用量： 10mg/次"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+            </LinearLayout>
+
+            <!--  信息  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="信息"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <!--服药依从性-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_drugComplianceCode"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="服药依从性： 规律"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_drugAdverseCode"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="用药不良反正： 无"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--低血糖反应-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_hypogReactCode"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="低血糖反应： 无"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/FuGPPersonHistoryLinearLayout">
+
+                <!--足背动脉搏动-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_pofdaCode"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="足背动脉搏动： 未触及"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+                <!--此次随访分类-->
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/text_personHistory_followupClassifyCode"
+                    style="@style/FuGPPersonHistoryContent"
+                    android:text="此次随访分类： 控制满意"/>
+
+                <include layout="@layout/fu_view_vertical"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

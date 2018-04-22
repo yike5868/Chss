@@ -1,0 +1,992 @@
+ACTIVITY MANAGER PENDING INTENTS (dumpsys activity intents)
+  * PendingIntentRecord{1ab082e9 com.android.deskclock startActivity}
+  * PendingIntentRecord{e40eb6e com.baidu.searchbox startActivity}
+  * PendingIntentRecord{1e73f20f com.baidu.searchbox startActivity}
+  * PendingIntentRecord{11b8d29c com.lenovo.lsf.device broadcastIntent}
+  * PendingIntentRecord{1c8564a5 com.mgyapp.android broadcastIntent}
+  * PendingIntentRecord{614507a android broadcastIntent}
+  * PendingIntentRecord{3f87a02b android broadcastIntent}
+  * PendingIntentRecord{2bce7c88 com.mgyapp.android startService}
+  * PendingIntentRecord{2a0ca621 com.mgyapp.android broadcastIntent}
+  * PendingIntentRecord{2086fa46 com.mediatek.systemupdate broadcastIntent}
+  * PendingIntentRecord{11de1407 com.android.deskclock broadcastIntent}
+  * PendingIntentRecord{a12d934 com.baidu.appsearch startActivity}
+  * PendingIntentRecord{3a6c835d com.baidu.appsearch startActivity}
+  * PendingIntentRecord{272874d2 com.mgyapp.android broadcastIntent}
+  * PendingIntentRecord{2c3de9a3 android broadcastIntent}
+  * PendingIntentRecord{a9e54a0 com.baidu.appsearch broadcastIntent}
+  * PendingIntentRecord{16f2f859 com.mgyapp.android startService}
+  * PendingIntentRecord{3af50c1e com.baidu.appsearch startActivity}
+  * PendingIntentRecord{13b7cff android broadcastIntent}
+  * PendingIntentRecord{12a41acc com.sohu.inputmethod.sogou broadcastIntent}
+  * PendingIntentRecord{35d1c115 com.baidu.appsearch startActivity}
+  * PendingIntentRecord{3e61cc2a com.sohu.inputmethod.sogou broadcastIntent}
+  * PendingIntentRecord{2e54ea1b android broadcastIntent}
+  * PendingIntentRecord{55e17b8 android startActivity}
+  * PendingIntentRecord{49a5991 com.mediatek.security startActivity}
+  * PendingIntentRecord{142880f6 android broadcastIntent}
+  * PendingIntentRecord{20ce0cf7 com.baidu.searchbox broadcastIntent}
+  * PendingIntentRecord{3db8f764 com.lenovo.ue.service broadcastIntent}
+  * PendingIntentRecord{1e79fdcd com.lenovo.ue.service broadcastIntent}
+  * PendingIntentRecord{3ed3b682 com.sohu.inputmethod.sogou broadcastIntent}
+  * PendingIntentRecord{2c4c8193 com.baidu.appsearch startActivity}
+  * PendingIntentRecord{36c025d0 android broadcastIntent}
+  * PendingIntentRecord{2a35a9c9 android broadcastIntent}
+  * PendingIntentRecord{2d0ab8ce android startActivity}
+  * PendingIntentRecord{2f33a3ef android startActivity}
+  * PendingIntentRecord{ec9cefc com.jkx5da.client startActivity}
+  * PendingIntentRecord{1be61985 com.lenovo.lsf.device startService}
+  * PendingIntentRecord{3e9d93da com.lenovo.ue.service broadcastIntent}
+  * PendingIntentRecord{20c0900b android broadcastIntent}
+  * PendingIntentRecord{1162dee8 com.baidu.appsearch startActivity}
+  * PendingIntentRecord{1673c901 com.lenovo.ue.service broadcastIntent}
+  * PendingIntentRecord{e5113a6 android broadcastIntent}
+  * PendingIntentRecord{24e621e7 android broadcastIntent}
+  * PendingIntentRecord{33fb0194 com.jkx5da.client broadcastIntent}
+  * PendingIntentRecord{28d2f43d android broadcastIntent}
+  * PendingIntentRecord{c6ac432 com.android.calendar broadcastIntent}
+  * PendingIntentRecord{1e8f583 com.sohu.inputmethod.sogou broadcastIntent}
+  * PendingIntentRecord{3150a300 android broadcastIntent}
+  * PendingIntentRecord{22ff9739 com.android.providers.calendar broadcastIntent}
+  * PendingIntentRecord{35fcf17e android broadcastIntent}
+  * PendingIntentRecord{13bb66df com.apicloud.apploader startService}
+  * PendingIntentRecord{2f9cef2c com.sohu.inputmethod.sogou broadcastIntent}
+  * PendingIntentRecord{3eb96df5 com.baidu.appsearch startActivity}
+  * PendingIntentRecord{34f2a78a android broadcastIntent}
+  * PendingIntentRecord{191991fb com.baidu.appsearch startActivity}
+  * PendingIntentRecord{1d7fd218 android startActivity}
+  * PendingIntentRecord{17fff471 sina.mobile.tianqitong broadcastIntent}
+  * PendingIntentRecord{34dbb256 com.lenovo.ue.service broadcastIntent}
+  * PendingIntentRecord{366552d7 android broadcastIntent}
+  * PendingIntentRecord{31abf7c4 android broadcastIntent}
+  * PendingIntentRecord{314e66ad com.baidu.appsearch startService}
+  * PendingIntentRecord{38789de2 com.sohu.inputmethod.sogou broadcastIntent}
+  * PendingIntentRecord{a424573 com.sohu.inputmethod.sogou startService}
+  * PendingIntentRecord{3952cc30 com.baidu.searchbox startActivity}
+  * PendingIntentRecord{3f97c0a9 com.baidu.searchbox startActivity}
+  * PendingIntentRecord{3c06b62e android broadcastIntent}
+  * PendingIntentRecord{2ff1c5cf android broadcastIntent}
+  * PendingIntentRecord{21507b5c com.baidu.searchbox broadcastIntent}
+  * PendingIntentRecord{3a02be65 com.android.deskclock startActivity}
+  * PendingIntentRecord{304c073a android broadcastIntent}
+  * PendingIntentRecord{b6eefeb com.baidu.searchbox broadcastIntent}
+  * PendingIntentRecord{2617f148 com.baidu.searchbox startService}
+  * PendingIntentRecord{2965dbe1 android broadcastIntent}
+  * PendingIntentRecord{1a635d06 android broadcastIntent}
+  * PendingIntentRecord{3b4a9fc7 android broadcastIntent}
+
+ACTIVITY MANAGER BROADCAST STATE (dumpsys activity broadcasts)
+  Historical broadcasts [foreground]:
+  #0: BroadcastRecord{165ed9f4 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #1: BroadcastRecord{3383551d u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #2: BroadcastRecord{24484392 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #3: BroadcastRecord{c477163 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #4: BroadcastRecord{1489a160 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #5: BroadcastRecord{1e052619 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #6: BroadcastRecord{2a2306de u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #7: BroadcastRecord{ab5c0bf u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #8: BroadcastRecord{2d7738c u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #9: BroadcastRecord{5390ad5 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #10: BroadcastRecord{1054b2ea u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #11: BroadcastRecord{d8fa9db u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #12: BroadcastRecord{64e3c78 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #13: BroadcastRecord{28c7f51 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #14: BroadcastRecord{2e4313b6 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #15: BroadcastRecord{175508b7 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #16: BroadcastRecord{c66a824 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #17: BroadcastRecord{3ec8bf8d u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #18: BroadcastRecord{19e4b542 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #19: BroadcastRecord{28a77953 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #20: BroadcastRecord{3f782290 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #21: BroadcastRecord{2c0ec789 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #22: BroadcastRecord{200ce38e u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #23: BroadcastRecord{20a657af u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #24: BroadcastRecord{15e4d7bc u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #25: BroadcastRecord{23935345 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #26: BroadcastRecord{3577aa9a u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #27: BroadcastRecord{70abfcb u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #28: BroadcastRecord{2805b3a8 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #29: BroadcastRecord{231adec1 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #30: BroadcastRecord{2c95d666 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #31: BroadcastRecord{1c038da7 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #32: BroadcastRecord{38d66254 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #33: BroadcastRecord{2635a5fd u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #34: BroadcastRecord{3c18f2f2 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #35: BroadcastRecord{9d15d43 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #36: BroadcastRecord{1d614fc0 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #37: BroadcastRecord{173ba4f9 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #38: BroadcastRecord{223f4c3e u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #39: BroadcastRecord{14228a9f u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #40: BroadcastRecord{2eeba7ec u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #41: BroadcastRecord{140897b5 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #42: BroadcastRecord{30dfee4a u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #43: BroadcastRecord{212f31bb u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #44: BroadcastRecord{33e156d8 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #45: BroadcastRecord{277fa31 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #46: BroadcastRecord{e36a516 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #47: BroadcastRecord{38952e97 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #48: BroadcastRecord{2b810884 u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #49: BroadcastRecord{30a1086d u-1 android.intent.action.TIME_TICK}
+    act=android.intent.action.TIME_TICK flg=0x50000114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  ...
+
+  Historical broadcasts [background]:
+  #0: BroadcastRecord{366ffca2 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-51}]
+  #1: BroadcastRecord{13f41d33 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-48}]
+  #2: BroadcastRecord{284828f0 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-48}]
+  #3: BroadcastRecord{3cd2be69 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #4: BroadcastRecord{9f540ee u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #5: BroadcastRecord{1d49598f u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #6: BroadcastRecord{251ee41c u0 com.android.server.WifiManager.action.START_SCAN}
+    act=com.android.server.WifiManager.action.START_SCAN flg=0x114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #7: BroadcastRecord{14fd825 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #8: BroadcastRecord{34787dfa u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-ion, level_2nd=50, icon-small=17303174, present_2nd=false, health=2, status=2, plugged=2, present=true, level=87, scale=100, status_2nd=4, temperature=300, voltage=4186, invalid_charger=0}]
+  #9: BroadcastRecord{370bffab u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #10: BroadcastRecord{1442608 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #11: BroadcastRecord{3fcad1a1 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-51}]
+  #12: BroadcastRecord{38c07fc6 u-1 android.net.wifi.SCAN_RESULTS}
+    act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras)
+    extras: Bundle[{SHOW_RESELECT_DIALOG=false}]
+  #13: BroadcastRecord{2a08eb87 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-51}]
+  #14: BroadcastRecord{ef99ab4 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-51}]
+  #15: BroadcastRecord{8a1e6dd u0 com.android.server.WifiManager.action.START_SCAN}
+    act=com.android.server.WifiManager.action.START_SCAN flg=0x114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #16: BroadcastRecord{2d34d252 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-51}]
+  #17: BroadcastRecord{14feb923 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-53}]
+  #18: BroadcastRecord{20efae20 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-53}]
+  #19: BroadcastRecord{19db13d9 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-52}]
+  #20: BroadcastRecord{3529c19e u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-52}]
+  #21: BroadcastRecord{39f9c47f u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-50}]
+  #22: BroadcastRecord{2718c4c u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-50}]
+  #23: BroadcastRecord{31e01495 u0 com.android.server.WifiManager.action.START_SCAN}
+    act=com.android.server.WifiManager.action.START_SCAN flg=0x114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #24: BroadcastRecord{2ec59aa u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-50}]
+  #25: BroadcastRecord{570299b u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-50}]
+  #26: BroadcastRecord{6512138 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-48}]
+  #27: BroadcastRecord{11fa6511 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-48}]
+  #28: BroadcastRecord{2e8e6676 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-48}]
+  #29: BroadcastRecord{2b1dc477 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-48}]
+  #30: BroadcastRecord{189318e4 u-1 android.net.wifi.SCAN_RESULTS}
+    act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras)
+    extras: Bundle[{SHOW_RESELECT_DIALOG=false}]
+  #31: BroadcastRecord{2c8f414d u0 com.android.server.WifiManager.action.START_SCAN}
+    act=com.android.server.WifiManager.action.START_SCAN flg=0x114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #32: BroadcastRecord{2d727402 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-48}]
+  #33: BroadcastRecord{34a03113 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-48}]
+  #34: BroadcastRecord{3edadf50 u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-ion, level_2nd=50, icon-small=17303174, present_2nd=false, health=2, status=2, plugged=2, present=true, level=87, scale=100, status_2nd=4, temperature=300, voltage=4185, invalid_charger=0}]
+  #35: BroadcastRecord{3b1ba549 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #36: BroadcastRecord{3697ce4e u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #37: BroadcastRecord{1dd2cb6f u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-50}]
+  #38: BroadcastRecord{3396a07c u0 null}
+    flg=0x114 (has extras)
+    targetComp: {com.lenovo.ue.service/com.lenovo.ue.biz.v1.app.AppRunningStateReceiver}
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #39: BroadcastRecord{37f04d05 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-50}]
+  #40: BroadcastRecord{1fa6815a u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-51}]
+  #41: BroadcastRecord{1aeaaf8b u0 com.android.server.WifiManager.action.START_SCAN}
+    act=com.android.server.WifiManager.action.START_SCAN flg=0x114 (has extras)
+    extras: Bundle[{android.intent.extra.ALARM_COUNT=1}]
+  #42: BroadcastRecord{7eb4868 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-51}]
+  #43: BroadcastRecord{37adb481 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #44: BroadcastRecord{3ebb5926 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-47}]
+  #45: BroadcastRecord{2452b967 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-46}]
+  #46: BroadcastRecord{38608314 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-46}]
+  #47: BroadcastRecord{1e8017bd u-1 android.intent.action.BATTERY_CHANGED}
+    act=android.intent.action.BATTERY_CHANGED flg=0x60000010 (has extras)
+    extras: Bundle[{technology=Li-ion, level_2nd=50, icon-small=17303174, present_2nd=false, health=2, status=2, plugged=2, present=true, level=87, scale=100, status_2nd=4, temperature=300, voltage=4182, invalid_charger=0}]
+  #48: BroadcastRecord{1cf3e1b2 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-53}]
+  #49: BroadcastRecord{24478503 u-1 android.net.wifi.RSSI_CHANGED}
+    act=android.net.wifi.RSSI_CHANGED flg=0x4000010 (has extras)
+    extras: Bundle[{newRssi=-53}]
+  ...
+
+  Sticky broadcasts for user -1:
+  * Sticky action android.intent.action.SERVICE_STATE
+  * Sticky action android.intent.action.ACTION_DEFAULT_SMS_SUBSCRIPTION_CHANGED
+  * Sticky action android.net.wifi.WIFI_STATE_CHANGED
+  * Sticky action mediatek.intent.action.ACTION_SIM_STATE_CHANGED_MULTI_APPLICATION
+  * Sticky action android.net.wifi.p2p.CONNECTION_STATE_CHANGE
+  * Sticky action android.media.ACTION_SCO_AUDIO_STATE_UPDATED
+  * Sticky action android.net.wifi.p2p.THIS_DEVICE_CHANGED
+  * Sticky action mediatek.intent.action.LOCATED_PLMN_CHANGED
+  * Sticky action android.intent.action.BATTERY_CHANGED
+  * Sticky action android.intent.action.ACTION_DEFAULT_VOICE_SUBSCRIPTION_CHANGED
+  * Sticky action android.net.conn.CONNECTIVITY_CHANGE
+  * Sticky action android.intent.action.ANY_DATA_STATE
+  * Sticky action android.provider.Telephony.SPN_STRINGS_UPDATED
+  * Sticky action android.net.nsd.STATE_CHANGED
+  * Sticky action android.hardware.usb.action.USB_STATE
+  * Sticky action android.net.wifi.RSSI_CHANGED
+  * Sticky action android.net.wifi.STATE_CHANGE
+  * Sticky action android.intent.action.SIM_STATE_CHANGED
+  * Sticky action android.intent.action.SIG_STR
+  * Sticky action com.mediatek.wfd.connection
+  * Sticky action android.net.wifi.supplicant.STATE_CHANGE
+  * Sticky action android.net.wifi.p2p.PERSISTENT_GROUPS_CHANGED
+  * Sticky action android.net.conn.INET_CONDITION_ACTION
+  * Sticky action android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE
+  * Sticky action android.media.SCO_AUDIO_STATE_CHANGED
+  * Sticky action android.os.UpdateLock.UPDATE_LOCK_CHANGED
+  * Sticky action android.media.MASTER_MUTE_CHANGED_ACTION
+  * Sticky action wifi_scan_available
+  * Sticky action android.net.wifi.p2p.STATE_CHANGED
+  * Sticky action android.intent.action.HDMI_PLUGGED
+  * Sticky action android.media.RINGER_MODE_CHANGED
+
+  Sticky broadcasts for user 0:
+  * Sticky action android.intent.action.ACTION_SUBINFO_RECORD_UPDATED
+  * Sticky action com.android.launcher3.SYSTEM_READY
+
+ACTIVITY MANAGER CONTENT PROVIDERS (dumpsys activity providers)
+  Published single-user content providers (by class):
+  * ContentProviderRecord{204cbc80 u0 com.android.providers.telephony/.HbpcdLookupProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    singleton=true
+    authority=hbpcd_lookup
+  * ContentProviderRecord{13d36f97 u0 com.android.providers.settings/.SettingsProvider}
+    proc=ProcessRecord{26965fa5 670:system/1000}
+    singleton=true
+    authority=settings
+    42 connections, 0 external handles
+      -> 1062:com.android.systemui/u0a22 s1/1 u0/0 +4h17m52s174ms
+      -> 1313:com.sohu.inputmethod.sogou/u0a78 s1/1 u0/0 +4h17m50s616ms
+      -> 1378:com.baidu.map.location/u0a67 s1/1 u0/0 +4h17m50s447ms
+      -> 1411:com.android.phone/1001 s1/1 u0/0 +4h17m50s189ms
+      -> 1438:com.mediatek.voiceextension/1000 s1/1 u0/0 +4h17m50s157ms
+      -> 1546:com.android.launcher3/u0a12 s1/1 u0/0 +4h17m50s135ms
+      -> 1472:com.dolby/1000 s1/1 u0/0 +4h17m50s128ms
+      -> 1490:com.android.server.telecom/1001 s1/1 u0/0 +4h17m50s119ms
+      -> 1455:com.mediatek.bluetooth/1002 s1/1 u0/0 +4h17m50s119ms
+      -> 1508:com.mediatek.voicecommand/u0a65 s1/1 u0/0 +4h17m50s117ms
+      -> 1528:com.mediatek.nlpservice/u0a54 s1/1 u0/0 +4h17m50s115ms
+      -> 1582:com.mgyapp.android/u0a87 s1/1 u0/0 +4h17m50s8ms
+      -> 1767:com.baidu.appsearch/u0a121 s1/1 u0/0 +4h17m48s71ms
+      -> 1811:com.tencent.mobileqq:MSF/u0a136 s1/1 u0/0 +4h17m47s162ms
+      -> 1981:com.jkx5da.client:xg_service_v2/u0a86 s1/1 u0/0 +4h17m43s594ms
+      -> 2222:com.baidu.searchbox:bdservice_v1/u0a97 s1/1 u0/0 +4h17m39s720ms
+      -> 2391:com.baidu.appsearch:locationservice/u0a121 s1/1 u0/0 +4h17m37s277ms
+      -> 2552:com.mediatek.atci.service/1000 s1/1 u0/0 +4h17m35s633ms
+      -> 2842:com.lenovo.ue.service/u0a10 s1/1 u0/0 +4h17m32s742ms
+      -> 3065:com.apicloud.apploader:remote/u0a140 s1/1 u0/0 +4h17m29s816ms
+      -> 3228:com.lenovo.lsf/u0a11 s1/1 u0/0 +4h17m27s974ms
+      -> 3420:com.lenovo.lsf.device/u0a9 s1/1 u0/0 +4h17m25s250ms
+      -> 3758:com.huaqin.factoryservice/1000 s1/1 u0/0 +4h17m19s692ms
+      -> 12806:android.process.media/u0a5 s1/1 u0/0 +2h49m33s684ms
+      -> 13218:com.android.defcontainer/u0a3 s1/1 u0/0 +2h49m21s40ms
+      -> 13868:com.android.mms/u0a18 s1/1 u0/0 +2h41m6s302ms
+      -> 13955:com.mediatek.filemanager/u0a38 s1/1 u0/0 +2h39m6s574ms
+      -> 14466:android.process.acore/u0a2 s1/1 u0/0 +1h2m3s423ms
+      -> 14557:net.greatsoft.main/u0a144 s1/1 u0/0 +1h2m2s590ms
+      -> 15200:com.android.deskclock/u0a33 s1/1 u0/0 +57m43s916ms
+      -> 15747:com.baidu.searchbox/u0a97 s1/1 u0/0 +3m38s177ms
+      -> 15812:sina.mobile.tianqitong/u0a80 s1/1 u0/0 +3m7s667ms
+      -> 15857:com.lenovo.ota/u0a13 s1/1 u0/0 +3m6s937ms
+      -> 15906:com.lenovo.leos.appstore.pad/u0a14 s1/1 u0/0 +3m6s651ms
+      -> 16021:com.android.gallery3d/u0a40 s1/1 u0/0 +3m3s28ms
+      -> 16050:com.svox.pico/u0a59 s1/1 u0/0 +3m2s77ms
+      -> 16068:com.autonavi.minimap/u0a71 s1/1 u0/0 +3m1s831ms
+      -> 16112:com.lenovo.magicplus/u0a74 s1/1 u0/0 +3m0s384ms
+      -> 16142:com.tencent.mobileqq:web/u0a136 s1/1 u0/0 +3m0s60ms
+      -> 16167:com.tencent.mobileqq/u0a136 s1/1 u0/0 +2m59s598ms
+      -> 16200:com.android.quicksearchbox/u0a61 s1/1 u0/0 +2m59s92ms
+      -> 16343:net.greatsoft.followup/u0a145 s1/1 u0/0 +2m17s577ms
+  * ContentProviderRecord{2d1b72b9 u0 com.android.providers.telephony/.MwiProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    singleton=true
+    authority=mwimsg
+  * ContentProviderRecord{166b749e u0 com.android.providers.telephony/.WapPushProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    singleton=true
+    authority=wappush
+  * ContentProviderRecord{10ab610c u0 com.android.providers.telephony/.SmsProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    singleton=true
+    authority=sms
+  * ContentProviderRecord{2c8420b8 u0 com.android.providers.telephony/.CbProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    singleton=true
+    authority=cb
+  * ContentProviderRecord{529971b u0 com.android.providers.telephony/.MmsSmsProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    singleton=true
+    authority=mms-sms
+  * ContentProviderRecord{3045fd12 u0 com.android.providers.telephony/.MmsProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    singleton=true
+    authority=mms
+
+  Published user 0 content providers (by class):
+  * ContentProviderRecord{5ba66fe u0 com.tencent.mobileqq/.openapi.OpenApiProvider}
+    proc=ProcessRecord{22336e5f 16167:com.tencent.mobileqq/u0a136}
+    authority=com.tencent.mobileqq.openapi.provider
+  * ContentProviderRecord{380120ac u0 com.lenovo.magicplus/.providers.AppsDBProvider}
+    proc=ProcessRecord{21778175 16112:com.lenovo.magicplus/u0a74}
+    authority=leplus.app
+  * ContentProviderRecord{3ed1f50a u0 com.mediatek.bluetooth/.ftp.BluetoothFtpProvider}
+    proc=ProcessRecord{7ca917b 1455:com.mediatek.bluetooth/1002}
+    authority=com.mediatek.provider.bluetooth.ftp
+  * ContentProviderRecord{9b59b98 u0 com.android.phone/.IccProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    authority=icc
+  * ContentProviderRecord{274bbff1 u0 com.lenovo.leos.appstore.pad/com.lenovo.leos.appstore.dao.AppsProvider}
+    proc=ProcessRecord{2e915c2d 15906:com.lenovo.leos.appstore.pad/u0a14}
+    authority=com.lenovo.provider.appstore.appinfo
+  * ContentProviderRecord{352257d6 u0 com.lenovo.magicplus/.providers.TrashDBProvider}
+    proc=ProcessRecord{21778175 16112:com.lenovo.magicplus/u0a74}
+    authority=leplus.trash
+  * ContentProviderRecord{a3a2aa7 u0 com.android.providers.media/.MediaProvider}
+    proc=ProcessRecord{18b6f2b 12806:android.process.media/u0a5}
+    authority=media
+  * ContentProviderRecord{1be6ca57 u0 com.apicloud.apploader/com.uzmap.pkg.uzmodules.uzdownloadmanager.DownloadProvider}
+    proc=ProcessRecord{934d944 3065:com.apicloud.apploader:remote/u0a140}
+    authority=com.apicloud.apploader.uz_downloads
+  * ContentProviderRecord{144b6a2d u0 com.baidu.appsearch/.downloads.DownloadInfoProvider}
+    proc=ProcessRecord{2d7d56ac 1767:com.baidu.appsearch/u0a121}
+    authority=com.baidu.appsearch.downloadinfoprovider
+  * ContentProviderRecord{2a441b62 u0 com.svox.pico/.providers.SettingsProvider}
+    proc=ProcessRecord{f23b4f3 16050:com.svox.pico/u0a59}
+    authority=com.svox.pico.providers.SettingsProvider
+  * ContentProviderRecord{3a4845b0 u0 com.android.gallery3d/.filtershow.provider.SharedImageProvider}
+    proc=ProcessRecord{2c217c29 16021:com.android.gallery3d/u0a40}
+    authority=com.android.gallery3d.filtershow.provider.SharedImageProvider
+  * ContentProviderRecord{2ecc8bae u0 com.android.gallery3d/com.android.photos.data.PhotoProvider}
+    proc=ProcessRecord{2c217c29 16021:com.android.gallery3d/u0a40}
+    authority=com.android.gallery3d.photoprovider
+  * ContentProviderRecord{363aad4f u0 com.android.providers.telephony/.UserCBProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    authority=usercb
+  * ContentProviderRecord{11e40cdc u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.CitysDBProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=sina.mobile.tianqitong.Citys
+  * ContentProviderRecord{20f864f u0 com.baidu.appsearch/.freqstatistic.AppStatusContentProvider}
+    proc=ProcessRecord{2d7d56ac 1767:com.baidu.appsearch/u0a121}
+    authority=com.baidu.appsearch.freqstatistic.AppStatusContentProvider
+  * ContentProviderRecord{282cb1e5 u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.LifeInfoProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=com.sina.tianqitong.LifeInfoProvider
+  * ContentProviderRecord{3559b4ba u0 com.android.providers.downloads/.DownloadProvider}
+    proc=ProcessRecord{18b6f2b 12806:android.process.media/u0a5}
+    authority=downloads
+  * ContentProviderRecord{276b2b16 u0 com.android.providers.telephony/.TelephonyProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    authority=telephony
+  * ContentProviderRecord{e1ecf6b u0 com.tencent.mobileqq/cooperation.readinjoy.content.ReadInJoyDataProvider}
+    proc=ProcessRecord{22336e5f 16167:com.tencent.mobileqq/u0a136}
+    authority=qq.readinjoy
+  * ContentProviderRecord{3e131ac8 u0 com.android.providers.applications/.ApplicationsProvider}
+    proc=ProcessRecord{9274a3d 14466:android.process.acore/u0a2}
+    authority=applications
+  * ContentProviderRecord{3efb8761 u0 com.android.providers.contacts/.CallLogProvider}
+    proc=ProcessRecord{9274a3d 14466:android.process.acore/u0a2}
+    authority=call_log
+  * ContentProviderRecord{a5e6286 u0 com.tencent.mobileqq/com.tencent.common.config.provider.QZoneConfigProvider}
+    proc=ProcessRecord{22336e5f 16167:com.tencent.mobileqq/u0a136}
+    authority=com.tencent.common.config.provider.QZoneConfigProvider
+  * ContentProviderRecord{cda37cc u0 com.tencent.mobileqq/com.tencent.mqq.shared_file_accessor.ContentProviderImpl}
+    proc=ProcessRecord{22336e5f 16167:com.tencent.mobileqq/u0a136}
+    launchingApp=ProcessRecord{22336e5f 16167:com.tencent.mobileqq/u0a136}
+    authority=com.tencent.mqq.shared_file_accessor.ContentProviderImpl
+  * ContentProviderRecord{25d8f747 u0 com.baidu.searchbox/.bookmark.BookmarkProvider}
+    proc=ProcessRecord{56830de 15747:com.baidu.searchbox/u0a97}
+    authority=com.baidu.searchbox.baidusearch_bookmark
+  * ContentProviderRecord{a31b74 u0 com.android.providers.telephony/.UserSmsProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    authority=usersms
+  * ContentProviderRecord{2788389d u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.SubscribeInfoProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=com.sina.tianqitong.provider
+  * ContentProviderRecord{3cae2112 u0 com.baidu.map.location/.DebugFlagContentProvider}
+    proc=ProcessRecord{a23c0e3 1378:com.baidu.map.location/u0a67}
+    authority=com.baidu.map.location.provider.DebugFlag
+  * ContentProviderRecord{8907ae0 u0 com.android.providers.telephony/.UserMmsProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    authority=usermms
+  * ContentProviderRecord{1434c199 u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.RefinedForecastInfoProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=com.sina.tianqitong.RefinedForecastInfoProvider
+  * ContentProviderRecord{2c93c5e u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.ResourceCenterInfoProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=com.sina.tianqitong.ResourceCenterInfoProvider
+  * ContentProviderRecord{ec7883f u0 com.android.phone/.PhoneSearchIndexablesProvider}
+    proc=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    authority=com.android.phone
+  * ContentProviderRecord{3632650c u0 com.lenovo.ota/.provider.OTASearchIndexablesProvider}
+    proc=ProcessRecord{2186de55 15857:com.lenovo.ota/u0a13}
+    authority=com.lenovo.ota
+  * ContentProviderRecord{28e8c06a u0 com.android.providers.contacts/.ContactsProvider2}
+    proc=ProcessRecord{9274a3d 14466:android.process.acore/u0a2}
+    authority=contacts;com.android.contacts
+  * ContentProviderRecord{11b6695b u0 com.android.quicksearchbox/.google.GoogleSuggestionProvider}
+    proc=ProcessRecord{3626c5f8 16200:com.android.quicksearchbox/u0a61}
+    authority=com.android.quicksearchbox.google
+  * ContentProviderRecord{34a40ad1 u0 com.autonavi.minimap/.alarm.AlarmProvider}
+    proc=ProcessRecord{13ca7936 16068:com.autonavi.minimap/u0a71}
+    authority=com.amap.deskclock
+  * ContentProviderRecord{13e84037 u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.callweather.WeatherInfoProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=com.sina.tianqitong.WeatherInfoProvider
+  * ContentProviderRecord{1efe49a4 u0 com.android.providers.downloads/.DownloadStorageProvider}
+    proc=ProcessRecord{18b6f2b 12806:android.process.media/u0a5}
+    launchingApp=ProcessRecord{18b6f2b 12806:android.process.media/u0a5}
+    authority=com.android.providers.downloads.documents
+  * ContentProviderRecord{58d830d u0 com.android.launcher3/.LauncherProvider}
+    proc=ProcessRecord{29d3feb9 1546:com.android.launcher3/u0a12}
+    authority=com.android.launcher3.settings
+  * ContentProviderRecord{243cf2c2 u0 com.android.mms/com.mediatek.nmsg.util.NmsgProvider}
+    proc=ProcessRecord{3f6a8d3 13868:com.android.mms/u0a18}
+    authority=com.mediatek.nmsg.util.nmsg.providers
+  * ContentProviderRecord{3da85c10 u0 com.android.mms/.SuggestionsProvider}
+    proc=ProcessRecord{3f6a8d3 13868:com.android.mms/u0a18}
+    authority=com.android.mms.SuggestionsProvider
+  * ContentProviderRecord{111c4309 u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.AdInfoProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=com.sina.tianqitong.AdInfoProvider
+  * ContentProviderRecord{76b790e u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.WeiboProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=com.sina.tianqitong.lib2.weibo
+  * ContentProviderRecord{1678ff2f u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.LiveactionInfoProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=com.sina.tianqitong.LiveactionInfoProvider
+  * ContentProviderRecord{3c9f293c u0 com.mediatek.bluetooth/.prx.monitor.PrxmProvider}
+    proc=ProcessRecord{7ca917b 1455:com.mediatek.bluetooth/1002}
+    authority=com.mediatek.provider.bluetooth.prxm
+  * ContentProviderRecord{2ebd06c5 u0 com.mediatek.bluetooth/.share.BluetoothShareProvider}
+    proc=ProcessRecord{7ca917b 1455:com.mediatek.bluetooth/1002}
+    authority=com.mediatek.provider.bluetooth.share
+  * ContentProviderRecord{3fea181a u0 com.android.quicksearchbox/.ShortcutsProvider}
+    proc=ProcessRecord{3626c5f8 16200:com.android.quicksearchbox/u0a61}
+    authority=com.android.quicksearchbox.shortcuts
+  * ContentProviderRecord{8205f4b u0 com.tencent.mobileqq/.content.FriendListProvider}
+    proc=ProcessRecord{22336e5f 16167:com.tencent.mobileqq/u0a136}
+    authority=qq.friendlist
+  * ContentProviderRecord{11d39d28 u0 com.android.providers.contacts/.VoicemailContentProvider}
+    proc=ProcessRecord{9274a3d 14466:android.process.acore/u0a2}
+    authority=com.android.voicemail
+  * ContentProviderRecord{5ec4a41 u0 com.lenovo.leos.appstore.pad/com.lenovo.leos.lcapackageinstaller.LcaInfoProvider}
+    proc=ProcessRecord{2e915c2d 15906:com.lenovo.leos.appstore.pad/u0a14}
+    authority=com.lenovo.leos.appstore.appinfo
+  * ContentProviderRecord{33819be6 u0 com.mediatek.bluetooth/.bip.BipProvider}
+    proc=ProcessRecord{7ca917b 1455:com.mediatek.bluetooth/1002}
+    authority=com.mediatek.provider.bluetooth.bip
+  * ContentProviderRecord{15135c4c u0 com.android.providers.media/.MediaDocumentsProvider}
+    proc=ProcessRecord{18b6f2b 12806:android.process.media/u0a5}
+    authority=com.android.providers.media.documents
+  * ContentProviderRecord{2593a527 u0 com.android.mms/.TempFileProvider}
+    proc=ProcessRecord{3f6a8d3 13868:com.android.mms/u0a18}
+    authority=mms_temp_file
+  * ContentProviderRecord{1f5963d4 u0 com.baidu.appsearch/.util.AppsearchInfoProvider}
+    proc=ProcessRecord{2d7d56ac 1767:com.baidu.appsearch/u0a121}
+    authority=com.baidu.appsearch.appsearchinfoprovider
+  * ContentProviderRecord{1f72497d u0 com.dolby/.provider.DsTuningProvider}
+    proc=ProcessRecord{d934419 1472:com.dolby/1000}
+    authority=com.dolby.dax.api.TuningProvider
+  * ContentProviderRecord{9bb9072 u0 com.baidu.searchbox/.downloads.DownloadProvider}
+    proc=ProcessRecord{56830de 15747:com.baidu.searchbox/u0a97}
+    authority=com.baidu.searchbox.downloads
+  * ContentProviderRecord{350b6cc3 u0 com.android.providers.contacts/.debug.DumpFileProvider}
+    proc=ProcessRecord{9274a3d 14466:android.process.acore/u0a2}
+    authority=com.android.contacts.dumpfile
+  * ContentProviderRecord{32d2e940 u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.TqtContentProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=sina.mobile.tianqitong
+  * ContentProviderRecord{e5f0079 u0 com.lenovo.leos.appstore.pad/com.lenovo.leos.download.DownloadProvider}
+    proc=ProcessRecord{2e915c2d 15906:com.lenovo.leos.appstore.pad/u0a14}
+    authority=com.lenovo.leos.appstore.download;com.lenovo.leos.download
+  * ContentProviderRecord{272e41be u0 com.android.gallery3d/.provider.GalleryProvider}
+    proc=ProcessRecord{2c217c29 16021:com.android.gallery3d/u0a40}
+    authority=com.android.gallery3d.provider
+  * ContentProviderRecord{1dae121f u0 com.android.deskclock/.provider.ClockProvider}
+    proc=ProcessRecord{f9d596c 15200:com.android.deskclock/u0a33}
+    authority=com.android.deskclock
+  * ContentProviderRecord{2cc62b35 u0 com.android.providers.userdictionary/.UserDictionaryProvider}
+    proc=ProcessRecord{9274a3d 14466:android.process.acore/u0a2}
+    authority=user_dictionary
+  * ContentProviderRecord{1188bbca u0 sina.mobile.tianqitong/com.sina.tianqitong.provider.SpecialTopicProvider}
+    proc=ProcessRecord{1e143711 15812:sina.mobile.tianqitong/u0a80}
+    authority=com.sina.tianqitong.SpecialTopicProvider
+  * ContentProviderRecord{28abb13b u0 com.baidu.appsearch/com.baidu.android.gporter.proxy.ContentProviderProxy}
+    proc=ProcessRecord{2d7d56ac 1767:com.baidu.appsearch/u0a121}
+    authority=com.baidu.appsearch_com.baidu.android.gpt.ContentProviderProxy
+
+  Granted Uri Permissions:
+  * UID 10061 holds:
+    UriPermission{2fbca058 0 @ content://com.android.email.provider/message}
+    UriPermission{283b45b1 0 @ content://com.android.email.provider/body}
+
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{357328a u0 com.mediatek.bluetooth/.AdvancedService}
+    app=ProcessRecord{7ca917b 1455:com.mediatek.bluetooth/1002}
+    created=-4h17m49s973ms started=true connections=0
+  * ServiceRecord{c606f31 u0 com.baidu.appsearch/.freqstatistic.PersonalRecommendationService}
+    app=ProcessRecord{2d7d56ac 1767:com.baidu.appsearch/u0a121}
+    created=-4h17m41s942ms started=true connections=3
+    Connections:
+      pkg=com.baidu.appsearch -> 1767:com.baidu.appsearch/u0a121
+      pkg=com.baidu.appsearch -> 1767:com.baidu.appsearch/u0a121
+      pkg=com.baidu.appsearch -> 1767:com.baidu.appsearch/u0a121
+  * ServiceRecord{24d3fb6f u0 com.sohu.inputmethod.sogou/.SogouIME}
+    app=ProcessRecord{2a825c89 1313:com.sohu.inputmethod.sogou/u0a78}
+    created=-4h17m50s752ms started=false connections=2
+    Connections:
+      act=android.view.InputMethod -> 670:system/1000
+      act=android.view.InputMethod -> 670:system/1000
+  * ServiceRecord{2be08301 u0 com.lenovo.lsf/.account.service.IDService}
+    app=ProcessRecord{85eca96 3228:com.lenovo.lsf/u0a11}
+    created=-4h17m27s920ms started=true connections=0
+  * ServiceRecord{2fd7bffb u0 com.android.systemui/.keyguard.KeyguardService}
+    app=ProcessRecord{145d7ec7 1062:com.android.systemui/u0a22}
+    created=-4h17m49s249ms started=false connections=2
+    Connections:
+       -> 1062:com.android.systemui/u0a22
+       -> 670:system/1000
+  * ServiceRecord{3db5c6d8 u0 com.android.systemui/.ImageWallpaper}
+    app=ProcessRecord{145d7ec7 1062:com.android.systemui/u0a22}
+    created=-4h17m50s763ms started=false connections=1
+    Connections:
+      act=android.service.wallpaper.WallpaperService -> 670:system/1000
+  * ServiceRecord{e20b10 u0 com.baidu.appsearch/.youhua.analysis.NetflowMonitorService}
+    app=ProcessRecord{2d7d56ac 1767:com.baidu.appsearch/u0a121}
+    created=-4h17m30s226ms started=true connections=0
+  * ServiceRecord{2a564602 u0 com.lenovo.lsf.device/com.lenovo.lsf.push.service.PushService}
+    app=ProcessRecord{379c9b13 3420:com.lenovo.lsf.device/u0a9}
+    created=-4h17m25s97ms started=true connections=0
+  * ServiceRecord{5816fa8 u0 com.baidu.appsearch/com.baidu.location.f}
+    app=ProcessRecord{1201018f 2391:com.baidu.appsearch:locationservice/u0a121}
+    created=-4h17m37s342ms started=false connections=1
+    Connections:
+       -> 1767:com.baidu.appsearch/u0a121
+  * ServiceRecord{2a4585ab u0 net.greatsoft.main/net.greatsoft.service.AppService}
+    app=ProcessRecord{381a2617 14557:net.greatsoft.main/u0a144}
+    created=-1h2m2s494ms started=true connections=0
+  * ServiceRecord{2735dd5d u0 com.apicloud.apploader/com.uzmap.pkg.uzsocket.UPnsService}
+    app=ProcessRecord{934d944 3065:com.apicloud.apploader:remote/u0a140}
+    created=-4h17m29s613ms started=true connections=0
+  * ServiceRecord{29e5dc u0 com.baidu.searchbox/com.baidu.android.pushservice.PushService}
+    app=ProcessRecord{27876a04 2222:com.baidu.searchbox:bdservice_v1/u0a97}
+    created=-4h17m39s901ms started=true connections=0
+  * ServiceRecord{1c9b47b2 u0 com.baidu.appsearch/.RecvHandleService}
+    app=ProcessRecord{2d7d56ac 1767:com.baidu.appsearch/u0a121}
+    created=-4h17m47s878ms started=true connections=0
+  * ServiceRecord{1a0d8bed u0 com.android.bluetooth/.a2dp.A2dpService}
+    app=null
+    created=-4h17m50s758ms started=false connections=1
+    Connections:
+      act=android.bluetooth.IBluetoothA2dp -> 670:system/1000
+  * ServiceRecord{c5b1ce0 u0 com.baidu.appsearch/.PCenterHandlerService}
+    app=ProcessRecord{2d7d56ac 1767:com.baidu.appsearch/u0a121}
+    created=-4h17m22s799ms started=true connections=0
+  * ServiceRecord{15745fb0 u0 com.lenovo.leos.appstore.pad/com.lenovo.leos.download.DownloadTaskService}
+    app=ProcessRecord{2e915c2d 15906:com.lenovo.leos.appstore.pad/u0a14}
+    created=-3m6s557ms started=false connections=1
+    Connections:
+      act=com.lenovo.leos.appstore.DownloadTaskService -> 15906:com.lenovo.leos.appstore.pad/u0a14
+  * ServiceRecord{2e2ff1a2 u0 com.android.systemui/.SystemUIService}
+    app=ProcessRecord{145d7ec7 1062:com.android.systemui/u0a22}
+    created=-4h17m52s247ms started=true connections=0
+  * ServiceRecord{2feeeae0 u0 android/.hardware.location.GeofenceHardwareService}
+    app=ProcessRecord{26965fa5 670:system/1000}
+    created=-4h17m50s614ms started=false connections=1
+    Connections:
+       -> 670:system/1000
+  * ServiceRecord{332721e8 u0 com.mediatek.voicecommand/.service.VoiceCommandManagerService}
+    app=ProcessRecord{1eb4fa22 1508:com.mediatek.voicecommand/u0a65}
+    created=-4h17m50s3ms started=true connections=0
+  * ServiceRecord{10e9659c u0 com.baidu.map.location/.BaiduNetworkLocationService}
+    app=ProcessRecord{a23c0e3 1378:com.baidu.map.location/u0a67}
+    created=-4h17m50s645ms started=false connections=2
+    Connections:
+      act=com.android.location.service.v3.NetworkLocationProvider pkg=com.baidu.map.location -> 670:system/1000
+      act=com.android.location.service.GeocodeProvider pkg=com.baidu.map.location -> 670:system/1000
+  * ServiceRecord{11c4fe8e u0 com.android.server.telecom/.BluetoothPhoneService}
+    app=ProcessRecord{3a2a3b71 1490:com.android.server.telecom/1001}
+    created=-4h17m49s834ms started=true connections=0
+  * ServiceRecord{507bf65 u0 com.huaqin.factoryservice/.FactorySetService}
+    app=ProcessRecord{f910cb3 3758:com.huaqin.factoryservice/1000}
+    created=-4h17m19s671ms started=true connections=0
+  * ServiceRecord{3f34eaab u0 com.lenovo.ue.service/.ReaperService}
+    app=ProcessRecord{12cab59e 2842:com.lenovo.ue.service/u0a10}
+    created=-4h17m32s611ms started=true connections=0
+  * ServiceRecord{2a6dc724 u0 com.mediatek.filemanager/.service.FileManagerService}
+    app=ProcessRecord{2d42f28d 13955:com.mediatek.filemanager/u0a38}
+    created=-2h39m6s567ms started=true connections=0
+  * ServiceRecord{2799fb7a u0 com.android.providers.media/.MtpService}
+    app=ProcessRecord{18b6f2b 12806:android.process.media/u0a5}
+    created=-2h49m31s627ms started=true connections=1
+    Connections:
+       -> 12806:android.process.media/u0a5
+  * ServiceRecord{18132270 u0 com.android.bluetooth/.hfp.HeadsetService}
+    app=null
+    created=-4h17m50s760ms started=false connections=4
+    Connections:
+      act=android.bluetooth.IBluetoothHeadset -> 1490:com.android.server.telecom/1001
+      act=android.bluetooth.IBluetoothHeadset -> 1490:com.android.server.telecom/1001
+      act=android.bluetooth.IBluetoothHeadset -> 670:system/1000
+      act=android.bluetooth.IBluetoothHeadset -> 1411:com.android.phone/1001
+  * ServiceRecord{13ac5a1d u0 com.jkx5da.client/com.tencent.android.tpush.service.XGPushService}
+    app=ProcessRecord{b24d2f4 1981:com.jkx5da.client:xg_service_v2/u0a86}
+    created=-4h17m43s274ms started=true connections=0
+  * ServiceRecord{234d99 u0 com.android.mms/.transaction.NoneService}
+    app=ProcessRecord{3f6a8d3 13868:com.android.mms/u0a18}
+    created=-4h17m36s129ms started=true connections=0
+  * ServiceRecord{1d63ee92 u0 com.dolby/.service.DsService}
+    app=ProcessRecord{d934419 1472:com.dolby/1000}
+    created=-4h17m49s941ms started=true connections=1
+    Connections:
+      act=com.dolby.api.IDs -> 1062:com.android.systemui/u0a22
+  * ServiceRecord{1b5a3f4f u0 android/com.android.internal.backup.LocalTransportService}
+    app=ProcessRecord{26965fa5 670:system/1000}
+    created=-4h17m52s701ms started=false connections=1
+    Connections:
+      act=android.backup.TRANSPORT_HOST -> 670:system/1000
+  * ServiceRecord{603175 u0 com.android.location.fused/.FusedLocationService}
+    app=ProcessRecord{26965fa5 670:system/1000}
+    created=-4h17m50s622ms started=false connections=1
+    Connections:
+      act=com.android.location.service.FusedLocationProvider pkg=com.android.location.fused -> 670:system/1000
+  * ServiceRecord{32109810 u0 com.mediatek.atci.service/.AtciService}
+    app=ProcessRecord{2743f9e9 2552:com.mediatek.atci.service/1000}
+    created=-4h17m35s621ms started=true connections=0
+  * ServiceRecord{fb074af u0 com.mgyapp.android/.service.AppService}
+    app=ProcessRecord{3a899c82 1582:com.mgyapp.android/u0a87}
+    created=-4h17m42s759ms started=true connections=0
+  * ServiceRecord{36a97039 u0 com.baidu.appsearch/.floatview.FloatService}
+    app=ProcessRecord{2d7d56ac 1767:com.baidu.appsearch/u0a121}
+    created=-2h49m45s262ms started=true connections=0
+  * ServiceRecord{34e1e81d u0 com.mediatek.nlpservice/.NlpService}
+    app=ProcessRecord{214c966e 1528:com.mediatek.nlpservice/u0a54}
+    created=-4h17m33s630ms started=true connections=0
+  * ServiceRecord{2f6e9b7a u0 com.android.mms.service/.MmsService}
+    app=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    created=-4h17m50s585ms started=false connections=1
+    Connections:
+       -> 670:system/1000
+  * ServiceRecord{c708bc7 u0 com.android.phone/.TelephonyDebugService}
+    app=ProcessRecord{18c63c97 1411:com.android.phone/1001}
+    created=-4h17m37s928ms started=true connections=0
+  * ServiceRecord{2f1223b1 u0 com.tencent.mobileqq/.msf.service.MsfService}
+    app=ProcessRecord{5344476 1811:com.tencent.mobileqq:MSF/u0a136}
+    created=-4h17m45s779ms started=true connections=1
+    Connections:
+       -> 16142:com.tencent.mobileqq:web/u0a136
+
+ACTIVITY MANAGER RECENT TASKS (dumpsys activity recents)
+  Recent tasks:
+  * Recent #0: TaskRecord{a85c10f #1262 A=net.greatsoft.followup U=0 sz=1}
+  * Recent #1: TaskRecord{1c5ff59c #1223 A=com.android.launcher3 U=0 sz=1}
+  * Recent #2: TaskRecord{24594ba5 #1258 A=net.greatsoft.main U=0 sz=0}
+  * Recent #3: TaskRecord{15afab7a #1259 A=networksample.wangtiansoft.com.networksample_okhttp U=0 sz=0}
+  * Recent #4: TaskRecord{1c675f2b #1227 A=com.android.systemui U=0 sz=1}
+  * Recent #5: TaskRecord{1d44cf88 #1256 A=com.mediatek.filemanager U=0 sz=1}
+  * Recent #6: TaskRecord{38b7fd21 #1247 A=com.android.packageinstaller U=0 sz=0}
+
+ACTIVITY MANAGER ACTIVITIES (dumpsys activity activities)
+Display #0 (activities from top to bottom):
+  Stack #1:
+    Task id #1262
+      TaskRecord{a85c10f #1262 A=net.greatsoft.followup U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=net.greatsoft.followup/.activity.FuLoginRegistActivity (has extras) }
+        Hist #0: ActivityRecord{217eae36 u0 net.greatsoft.followup/.activity.FuLoginRegistActivity t1262}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=net.greatsoft.followup/.activity.FuLoginRegistActivity (has extras) }
+          ProcessRecord{1dfd0546 16343:net.greatsoft.followup/u0a145}
+    Task id #1256
+      TaskRecord{1d44cf88 #1256 A=com.mediatek.filemanager U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.mediatek.filemanager/.FileManagerOperationActivity (has extras) }
+        Hist #0: ActivityRecord{27657200 u0 com.mediatek.filemanager/.FileManagerOperationActivity t1256}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.mediatek.filemanager/.FileManagerOperationActivity (has extras) }
+          ProcessRecord{2d42f28d 13955:com.mediatek.filemanager/u0a38}
+    Task id #1241
+      TaskRecord{367ac307 #1241 A=com.android.settings U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x38008000 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity }
+        Hist #0: ActivityRecord{33c5c787 u0 com.android.settings/.UsbSettings t1241}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x38008000 cmp=com.android.settings/.UsbSettings }
+    Task id #1230
+      TaskRecord{381b5c34 #1230 A=com.android.settings U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x38008000 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity }
+        Hist #0: ActivityRecord{2f47c121 u0 com.android.settings/.UsbSettings t1230}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x38008000 cmp=com.android.settings/.UsbSettings }
+    Task id #1225
+      TaskRecord{3df64a5d #1225 A=com.android.settings U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x38008000 cmp=com.android.settings/.Settings$DevelopmentSettingsActivity }
+        Hist #0: ActivityRecord{239e17ca u0 com.android.settings/.UsbSettings t1225}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x38008000 cmp=com.android.settings/.UsbSettings }
+
+    Running activities (most recent first):
+      TaskRecord{a85c10f #1262 A=net.greatsoft.followup U=0 sz=1}
+        Run #1: ActivityRecord{217eae36 u0 net.greatsoft.followup/.activity.FuLoginRegistActivity t1262}
+      TaskRecord{1d44cf88 #1256 A=com.mediatek.filemanager U=0 sz=1}
+        Run #0: ActivityRecord{27657200 u0 com.mediatek.filemanager/.FileManagerOperationActivity t1256}
+
+    mResumedActivity: ActivityRecord{217eae36 u0 net.greatsoft.followup/.activity.FuLoginRegistActivity t1262}
+
+  Stack #0:
+    Task id #1223
+      TaskRecord{1c5ff59c #1223 A=com.android.launcher3 U=0 sz=1}
+      Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.android.launcher3/.Launcher }
+        Hist #0: ActivityRecord{1680fa5d u0 com.android.launcher3/.Launcher t1223}
+          Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.android.launcher3/.Launcher }
+          ProcessRecord{29d3feb9 1546:com.android.launcher3/u0a12}
+
+    Task id #1227
+      TaskRecord{1c675f2b #1227 A=com.android.systemui U=0 sz=1}
+      Intent { act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[109,1351][1092,2334] (has extras) }
+        Hist #0: ActivityRecord{cb09294 u0 com.android.systemui/.recents.RecentsActivity t1227}
+          Intent { act=com.android.systemui.recents.SHOW_RECENTS flg=0x10804000 cmp=com.android.systemui/.recents.RecentsActivity bnds=[109,1351][1092,2334] (has extras) }
+          ProcessRecord{145d7ec7 1062:com.android.systemui/u0a22}
+
+    Running activities (most recent first):
+      TaskRecord{1c5ff59c #1223 A=com.android.launcher3 U=0 sz=1}
+        Run #1: ActivityRecord{1680fa5d u0 com.android.launcher3/.Launcher t1223}
+      TaskRecord{1c675f2b #1227 A=com.android.systemui U=0 sz=1}
+        Run #0: ActivityRecord{cb09294 u0 com.android.systemui/.recents.RecentsActivity t1227}
+
+  mFocusedActivity: ActivityRecord{217eae36 u0 net.greatsoft.followup/.activity.FuLoginRegistActivity t1262}
+  mFocusedStack=ActivityStack{d742fd2 stackId=1, 8 tasks} mLastFocusedStack=ActivityStack{d742fd2 stackId=1, 8 tasks}
+  mSleepTimeout=false
+  mCurTaskId=1262
+  mUserStackInFront={}
+  mActivityContainers={0=ActivtyContainer{0}A, 1=ActivtyContainer{1}A}
+
+ACTIVITY MANAGER RUNNING PROCESSES (dumpsys activity processes)
+  Isolated process list (sorted by uid):
+    Isolated # 0: ProcessRecord{2f7688a3 1045:WebViewLoader-arm64-v8a/1037}
+
+  Process LRU list (sorted by oom_adj, 43 total, non-act at 4, non-svc at 4):
+    PERS #42: sys   F/ /P  trm: 0 670:system/1000 (fixed)
+    PERS #41: pers  F/ /P  trm: 0 1062:com.android.systemui/u0a22 (fixed)
+    PERS #40: pers  F/ /P  trm: 0 1411:com.android.phone/1001 (fixed)
+    PERS #39: pers  F/ /P  trm: 0 1438:com.mediatek.voiceextension/1000 (fixed)
+    PERS #38: pers  F/ /P  trm: 0 1455:com.mediatek.bluetooth/1002 (fixed)
+    PERS #37: pers  F/ /P  trm: 0 1472:com.dolby/1000 (fixed)
+    PERS #36: pers  F/ /P  trm: 0 1490:com.android.server.telecom/1001 (fixed)
+    PERS #35: pers  F/ /P  trm: 0 1508:com.mediatek.voicecommand/u0a65 (fixed)
+    PERS #34: pers  F/ /P  trm: 0 1528:com.mediatek.nlpservice/u0a54 (fixed)
+    Proc # 0: fore  F/A/T  trm: 0 16343:net.greatsoft.followup/u0a145 (top-activity)
+    Proc #33: vis   B/ /IB trm: 0 1378:com.baidu.map.location/u0a67 (service)
+        com.baidu.map.location/.BaiduNetworkLocationService<=Proc{670:system/1000}
+    Proc # 1: vis   F/ /IF trm: 0 1313:com.sohu.inputmethod.sogou/u0a78 (service)
+        com.sohu.inputmethod.sogou/.SogouIME<=Proc{670:system/1000}
+    Proc # 7: prcp  F/ /IF trm: 0 2391:com.baidu.appsearch:locationservice/u0a121 (service)
+        com.baidu.appsearch/com.baidu.location.f<=Proc{1767:com.baidu.appsearch/u0a121}
+    Proc # 5: prcp  F/S/IF trm: 0 1767:com.baidu.appsearch/u0a121 (fg-service)
+    Proc #12: svc   B/ /S  trm: 0 3065:com.apicloud.apploader:remote/u0a140 (started-services)
+    Proc #11: svc   B/ /S  trm: 0 1811:com.tencent.mobileqq:MSF/u0a136 (started-services)
+    Proc # 2: home  B/ /HO trm: 0 1546:com.android.launcher3/u0a12 (home)
+    Proc #26: svcb  B/ /S  trm: 0 2222:com.baidu.searchbox:bdservice_v1/u0a97 (started-services)
+    Proc #15: svcb  B/ /S  trm: 0 3420:com.lenovo.lsf.device/u0a9 (started-services)
+    Proc # 8: cch   B/ /CE trm: 0 16200:com.android.quicksearchbox/u0a61 (cch-empty)
+    Proc # 6: cch   B/ /CE trm: 0 13218:com.android.defcontainer/u0a3 (cch-empty)
+    Proc # 4: cch   B/ /S  trm: 0 2842:com.lenovo.ue.service/u0a10 (cch-started-services)
+    Proc # 3: cch   B/ /S  trm: 0 13955:com.mediatek.filemanager/u0a38 (cch-started-ui-services)
+    Proc #14: cch+2 B/ /CE trm: 0 16068:com.autonavi.minimap/u0a71 (cch-empty)
+    Proc #13: cch+2 B/ /CE trm: 0 16112:com.lenovo.magicplus/u0a74 (cch-empty)
+    Proc #10: cch+2 B/ /CE trm: 0 16142:com.tencent.mobileqq:web/u0a136 (cch-empty)
+    Proc # 9: cch+2 B/ /CE trm: 0 16167:com.tencent.mobileqq/u0a136 (cch-empty)
+    Proc #19: cch+4 B/ /CE trm: 0 15857:com.lenovo.ota/u0a13 (cch-empty)
+    Proc #18: cch+4 B/ /CE trm: 0 15906:com.lenovo.leos.appstore.pad/u0a14 (cch-empty)
+    Proc #17: cch+4 B/ /CE trm: 0 16021:com.android.gallery3d/u0a40 (cch-empty)
+    Proc #16: cch+4 B/ /CE trm: 0 16050:com.svox.pico/u0a59 (cch-empty)
+    Proc #32: cch+6 B/ /S  trm: 0 2552:com.mediatek.atci.service/1000 (cch-started-services)
+    Proc #31: cch+6 B/ /S  trm: 0 3758:com.huaqin.factoryservice/1000 (cch-started-services)
+    Proc #30: cch+6 B/ /S  trm: 0 3228:com.lenovo.lsf/u0a11 (cch-started-services)
+    Proc #29: cch+6 B/ /S  trm: 0 1981:com.jkx5da.client:xg_service_v2/u0a86 (cch-started-services)
+    Proc #28: cch+6 B/ /S  trm: 0 13868:com.android.mms/u0a18 (cch-started-services)
+    Proc #27: cch+6 B/ /S  trm: 0 1582:com.mgyapp.android/u0a87 (cch-started-services)
+    Proc #25: cch+6 B/ /S  trm: 0 14557:net.greatsoft.main/u0a144 (cch-started-ui-services)
+    Proc #24: cch+6 B/ /CE trm: 0 15200:com.android.deskclock/u0a33 (cch-empty)
+    Proc #23: cch+6 B/ /S  trm: 0 12806:android.process.media/u0a5 (cch-started-services)
+    Proc #22: cch+6 B/ /CE trm: 0 15747:com.baidu.searchbox/u0a97 (cch-empty)
+    Proc #21: cch+6 B/ /CE trm: 0 15812:sina.mobile.tianqitong/u0a80 (cch-empty)
+    Proc #20: cch+6 B/ /CE trm: 0 14466:android.process.acore/u0a2 (cch-empty)
+
+  mStartedUsers:
+    User #0: mState=RUNNING
+  mStartedUserArray: [0]
+  mUserLru: [0]
+  mHomeProcess: ProcessRecord{29d3feb9 1546:com.android.launcher3/u0a12}
+  mPreviousProcess: ProcessRecord{381a2617 14557:net.greatsoft.main/u0a144}
+  mConfiguration: {1.08 ?mcc?mnc zh_CN ldltr sw800dp w800dp h1206dp 240dpi xlrg port finger -keyb/v/h -nav/h s.6}
+  mDebugApp=null/orig=null mDebugTransient=true mOrigWaitForDebugger=false

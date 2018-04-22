@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="50dp"
+    android:orientation="horizontal">
+
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_medicalRecordNo"
+        style="@style/exam_list_title"
+        android:textSize="@dimen/font_small"
+        android:textColor="@color/black"
+        android:text="病案号" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_hospitalName"
+        style="@style/exam_list_title"
+        android:layout_width="50dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small"
+        android:text="医疗机构名称" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_admissionDate"
+        style="@style/exam_list_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small"
+        android:text="入院日期" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_dischargeDate"
+        style="@style/exam_list_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small"
+        android:text="出院日期" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_admissionReason"
+        style="@style/exam_list_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_small"
+        android:text="原因" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_delete"
+        style="@style/exam_list_title"
+        android:layout_width="50dp"
+        android:textSize="@dimen/font_small"
+        android:layout_weight="0"
+        android:textColor="@color/black"
+        android:text="操作" />
+
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout"/>
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_setPassword"
+        android:layout_width="match_parent"
+        android:minHeight="60dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:text="修改密码"
+        android:textColor="#000"
+        android:textSize="@dimen/font_large"/>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_exit"
+        android:layout_width="match_parent"
+        android:minHeight="60dp"
+        android:layout_marginLeft="30dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:text="注销"
+        android:textColor="#000"
+        android:textSize="@dimen/font_large"/>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+</LinearLayout>

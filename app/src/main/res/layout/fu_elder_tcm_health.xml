@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout"/>
+
+    <ScrollView
+        android:id="@+id/parent_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 姓名 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="姓名"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_name"
+                    style="@style/public_input_edit"
+                    android:inputType="none"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_edit"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="根据近一年的体验和感觉，回答一下问题"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="1.您经历充沛吗？(指精神头足，乐于做事)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_energy"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="2.您容易疲乏吗？(指体力如何,是否稍微活动一下或做一点家务劳动就感到累)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_fatigue"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="3.您容易气短，呼吸短促，接不上气吗？"/>
+
+            <LinearLayout
+                android:id="@+id/ll_breathe"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="4.您说话声音低弱无力吗?(指说话没有力气)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_speak"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="5.您感到闷闷不乐、情绪低沉吗?(指心情不愉快，情绪低落)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_unpleasant"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="6.您容易精神紧张,焦虑不安吗？(指遇事是否精神紧张)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_nervous"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="7.您因为生活状态改变而感到孤独、失落吗？"/>
+
+            <LinearLayout
+                android:id="@+id/ll_solitary"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="8.您容易感到害怕或受到惊吓吗?"/>
+
+            <LinearLayout
+                android:id="@+id/ll_scare"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="9.您感到身体超重不轻松吗?(感觉身体沉重)[BMI指数=体重(kg)/身高²(m)]"/>
+
+            <LinearLayout
+                android:id="@+id/ll_weight"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="10.您眼睛干涩吗?"/>
+
+            <LinearLayout
+                android:id="@+id/ll_eye"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="11.您手脚发凉吗?(不包含因周围温度低或穿的少导致的手脚发冷)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_hand"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="12.您胃脘部、背部或腰膝部怕冷吗？(指上腹部、背部、腰部或膝关节等，有一处或多处怕冷)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_craw"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="13.您比一般人耐受不了寒冷吗？(指比别人容易害怕冬天或是夏天的冷空调、电扇等)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_cold"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="14.您容易患感冒吗?(指每年感冒的次数)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_catchacold"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="15.您没有感冒时也会鼻塞、流鼻涕吗?"/>
+
+            <LinearLayout
+                android:id="@+id/ll_runathenose"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="16.您有口粘口腻，或睡眠打鼾吗？"/>
+
+            <LinearLayout
+                android:id="@+id/ll_mouth"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="17.您容易过敏(对药物、食物、气味、花粉或在季节交替、气候变化时)吗?"/>
+
+            <LinearLayout
+                android:id="@+id/ll_food"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="18.您的皮肤容易起荨麻疹吗? (包括风团、风疹块、风疙瘩)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_derma"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="19.您的皮肤在不知不觉中会出现青紫瘀斑、皮下出血吗?"/>
+
+            <LinearLayout
+                android:id="@+id/ll_bleeding"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="20.您的皮肤一抓就红，并出现抓痕吗?(指被指甲或钝物划过后皮肤的反应)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_fingermail"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="21.您皮肤或口唇干吗?"/>
+
+            <LinearLayout
+                android:id="@+id/ll_oraldry"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="22.您有肢体麻木或固定部位疼痛的感觉吗?"/>
+
+            <LinearLayout
+                android:id="@+id/ll_ache"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="23.您面部或鼻部有油腻感或者油亮发光吗?(指脸上或鼻子)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_face"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="24.您面色或目眶晦黯，或出现褐色斑块/斑点吗?"/>
+
+            <LinearLayout
+                android:id="@+id/ll_spot"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="25.您有皮肤湿疹、疮疖吗？"/>
+
+            <LinearLayout
+                android:id="@+id/ll_sore"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="26.您感到口干咽燥、总想喝水吗？"/>
+
+            <LinearLayout
+                android:id="@+id/ll_drinking"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="27.您感到口苦或嘴里有异味吗?(指口苦或口臭)"/>
+
+            <LinearLayout
+                android:id="@+id/_bittertaste"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="28.您腹部肥大吗?(指腹部脂肪肥厚)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_abdomen"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="29.您吃(喝)凉的东西会感到不舒服或者怕吃(喝)凉的东西吗？(指不喜欢吃凉的食物，或吃了凉的食物后会不舒服)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_uncomfortable"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="30.您有大便黏滞不爽、解不尽的感觉吗?(大便容易粘在马桶或便坑壁上)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_unwell"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="31.您容易大便干燥吗?"/>
+
+            <LinearLayout
+                android:id="@+id/ll_malaise"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="32.您舌苔厚腻或有舌苔厚厚的感觉吗?(如果自我感觉不清楚可由调查员观察后填写)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_tongue"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="33.您舌下静脉瘀紫或增粗吗？(可由调查员辅助观察后填写)"/>
+
+            <LinearLayout
+                android:id="@+id/ll_vein"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="辨别体质类型"/>
+
+            <LinearLayout
+                android:id="@+id/ll_qiDeficiencyCode"
+                style="@style/public_info_layout"
+                android:background="#E6E7E9"
+                android:minHeight="60dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="气虚质"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="中医药保健指导"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_qi"
+                style="@style/public_info_layout"
+                android:orientation="vertical"/>
+
+            <LinearLayout
+                android:id="@+id/ll_yangDeficiencyCode"
+                style="@style/public_info_layout"
+                android:background="#E6E7E9"
+                android:minHeight="60dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="阳虚质"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="中医药保健指导"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_yang"
+                android:orientation="vertical"
+                style="@style/public_info_layout"/>
+
+            <LinearLayout
+                android:id="@+id/ll_yinDeficiencyCode"
+                style="@style/public_info_layout"
+                android:background="#E6E7E9"
+                android:minHeight="60dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="阴虚质"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="中医药保健指导"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_yin"
+                android:orientation="vertical"
+                style="@style/public_info_layout"/>
+
+            <LinearLayout
+                android:id="@+id/ll_phlegmWetCode"
+                style="@style/public_info_layout"
+                android:background="#E6E7E9"
+                android:minHeight="60dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="痰湿质"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="中医药保健指导"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_phlegm"
+                android:orientation="vertical"
+                style="@style/public_info_layout"/>
+
+            <LinearLayout
+                android:id="@+id/ll_dampHeatCode"
+                style="@style/public_info_layout"
+                android:background="#E6E7E9"
+                android:minHeight="60dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="湿热质"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="中医药保健指导"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_damp"
+                android:orientation="vertical"
+                style="@style/public_info_layout"/>
+
+            <LinearLayout
+                android:id="@+id/ll_bloodStasisCode"
+                style="@style/public_info_layout"
+                android:background="#E6E7E9"
+                android:minHeight="60dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="血瘀质"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="中医药保健指导"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_blood"
+                android:orientation="vertical"
+                style="@style/public_info_layout"/>
+
+            <LinearLayout
+                android:id="@+id/ll_qiDepressionCode"
+                style="@style/public_info_layout"
+                android:background="#E6E7E9"
+                android:minHeight="60dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="气郁质"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="中医药保健指导"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_qiDepression"
+                android:orientation="vertical"
+                style="@style/public_info_layout"/>
+
+            <LinearLayout
+                android:id="@+id/ll_specialDiathsisCode"
+                style="@style/public_info_layout"
+                android:background="#E6E7E9"
+                android:minHeight="60dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="特禀质"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="中医药保健指导"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_special"
+                android:orientation="vertical"
+                style="@style/public_info_layout"/>
+
+            <LinearLayout
+                android:id="@+id/ll_gentleQualityCode"
+                style="@style/public_info_layout"
+                android:background="#E6E7E9"
+                android:minHeight="60dp">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="平和质"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="中医药保健指导"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_large"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_gentle"
+                android:orientation="vertical"
+                style="@style/public_info_layout"/>
+
+            <View xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="10dp"
+                  android:background="#E6E7E9">
+
+            </View>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="填表日期*"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_fillDate"
+                    style="@style/public_input_edit"
+                    android:inputType="none"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="医生签名"/>
+
+                <Spinner
+                    android:id="@+id/sp_doctorName"
+                    style="@style/public_input_edit"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

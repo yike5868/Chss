@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="姓名"/>
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_name"
+            style="@style/public_input_edit"/>
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="性别"/>
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_sexCode"
+            style="@style/public_input_edit"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="接种证号"/>
+
+        <net.greatsoft.main.view.FuEditText
+            android:id="@+id/et_cdcVaccreportNo"
+            style="@style/public_input_edit_single"
+            app:maxByteLength="30"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="出生日期"/>
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_birthDate"
+            style="@style/public_input_edit"/>
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="监护人姓名"/>
+
+        <net.greatsoft.main.view.FuEditText
+            android:id="@+id/et_guardianName"
+            style="@style/public_input_edit"
+            app:maxByteLength="100"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="与儿童关系"/>
+
+        <Spinner
+            android:id="@+id/sp_guardianRelationCode"
+            style="@style/public_input_edit"/>
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="联系电话"/>
+
+        <net.greatsoft.main.view.FuEditText
+            android:id="@+id/et_familyTelNo"
+            style="@style/public_input_edit"
+            app:maxByteLength="30"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="家庭现住址"/>
+
+        <net.greatsoft.main.view.FuEditText
+            android:id="@+id/et_presentAddr"
+            style="@style/public_input_edit_single"
+            app:maxByteLength="200"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="户籍住址"/>
+
+        <net.greatsoft.main.view.FuCheckBox
+            android:id="@+id/cb_isSame"
+            style="@style/public_input_edit"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/bg_cb"
+            android:drawablePadding="10dp"
+            android:text="同家庭地址"
+            android:textColor="#000"
+            android:textSize="@dimen/font_small"/>
+
+        <net.greatsoft.main.view.FuEditText
+            android:id="@+id/et_registerAddrProvince"
+            style="@style/public_input_edit_single"
+            android:layout_width="160dp"
+            android:layout_weight="3"
+            app:maxByteLength="200"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="迁入时间"/>
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_moveInDate"
+            style="@style/public_input_edit"/>
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="迁出时间"/>
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_moveOutDate"
+            style="@style/public_input_edit"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="迁出原因"/>
+
+        <net.greatsoft.main.view.FuEditText
+            android:id="@+id/et_moveOutReason"
+            style="@style/public_input_edit_single"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="接种禁忌"/>
+
+        <net.greatsoft.main.view.FuEditText
+            android:id="@+id/et_vaccinateContraindication"
+            style="@style/public_input_edit_single"
+            app:maxByteLength="1000"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+    <LinearLayout
+        style="@style/public_info_layout">
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/public_input_title"
+            android:text="传染病史"/>
+
+        <net.greatsoft.main.view.FuEditText
+            android:id="@+id/et_infectionHistory"
+            style="@style/public_input_edit_single"
+            app:maxByteLength="1000"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/fu_view_horizontal"/>
+
+</LinearLayout>

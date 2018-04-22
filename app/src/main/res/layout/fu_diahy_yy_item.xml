@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/textback"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:orientation="horizontal" >
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="100dip"
+                android:layout_height="wrap_content"
+                android:text="药物名称:"
+                android:textSize="18sp" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_med"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="100dip"
+            android:background="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用法:"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/sp_medicineTimes"
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用量:"
+                android:textSize="18sp" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_medicineDosage"
+                android:layout_width="70dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="mg/次"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_delete"
+                android:layout_width="25dip"
+                android:layout_height="25dip"
+                android:layout_gravity="right|bottom"
+                android:layout_marginRight="5dip"
+                android:scaleType="fitXY"
+                android:src="@mipmap/delete_ic" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

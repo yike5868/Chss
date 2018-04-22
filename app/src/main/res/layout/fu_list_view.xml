@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/fu_public_title_layout" />
+
+        <net.greatsoft.main.view.pullToRefresh.PullToRefreshLayout
+            android:id="@+id/refresh_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/refresh_head" />
+            <!-- 支持所有实现Pullable接口的View -->
+
+            <net.greatsoft.main.view.pullToRefresh.PullableListView
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:background="#fff"
+                android:divider="#CFD0D1"
+                android:dividerHeight="1dp" />
+
+            <include layout="@layout/load_more" />
+
+        </net.greatsoft.main.view.pullToRefresh.PullToRefreshLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/main_blue"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/public_cancel" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+
+                android:background="@drawable/bg_corner">
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="@dimen/font_large"
+                    android:paddingRight="40dp"
+                    android:lines="1"
+                    android:background="@null"/>
+
+                <ImageView
+                    android:id="@+id/iv_delete"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/search_cancel_default" />
+            </RelativeLayout>
+
+            <net.greatsoft.main.view.FuButton
+                android:id="@+id/btn_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="@dimen/font_large"
+                android:textColor="@color/white"
+                android:text="搜索" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#cccccc"
+            android:divider="#000000"
+            android:dividerHeight="1dp"></ListView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

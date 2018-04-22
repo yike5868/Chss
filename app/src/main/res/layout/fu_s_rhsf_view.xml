@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout" />
+
+    <net.greatsoft.main.view.SelectDistrictsView
+        android:id="@+id/sd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_sf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="随访" />
+
+    <GridView
+        android:id="@+id/gv_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2"></GridView>
+</LinearLayout>

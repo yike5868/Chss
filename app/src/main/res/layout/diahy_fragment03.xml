@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEFF0"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EDEFF0"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDEFF0"
+            android:orientation="vertical" />
+
+        <ImageButton
+            android:id="@+id/ib_add"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal" />
+
+        <GridView
+            android:id="@+id/gv_o_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="250dip"
+            android:numColumns="3" >
+        </GridView>
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_next"
+            android:layout_width="150dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dip"
+            android:background="@mipmap/login_button"
+            android:text="下一步"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+</ScrollView>

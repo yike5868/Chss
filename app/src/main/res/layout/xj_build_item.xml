@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:minHeight="200dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/grid_view_selector"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:lines="1"
+                    android:text="王祥波"
+                    android:textSize="26sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="4人"
+                        android:textColor="#fff"
+                        android:textSize="22sp" />
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:text="2016.9.20"
+                        android:textSize="22sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_roomnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="101" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_householder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="业主" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_hyper_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_hyper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="高"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_diabetes_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_diabetes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="糖"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_pregnant_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/ll_pregnant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="孕"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_child_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_child"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="童"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_family_type"
+                android:layout_width="wrap_content"
+                android:layout_height="30dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:textSize="16sp" />
+
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_zt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="未随访"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_zt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_refused"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/btn_circle_red"
+            android:focusable="false"
+            android:text="拒绝"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_no"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/btn_circle_blue"
+            android:focusable="false"
+            android:text="无应答"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_noFamily"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grid_view_selector"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_create"
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:focusable="false"
+            android:text="建档"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+    </LinearLayout>
+
+</FrameLayout>

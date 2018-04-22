@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout" />
+
+    <ScrollView
+        android:id="@id/sc_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <!-- 基本信息 -->
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_exam_info"
+                style="@style/public_info_title"
+                android:text="小区信息" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="村居委会*" />
+
+                <net.greatsoft.main.view.FuButton
+                    android:id="@+id/btn_committee"
+                    style="@style/public_input_edit" />
+
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="小区" />
+
+                <Spinner
+                    android:id="@+id/sp_residential"
+                    style="@style/public_input_edit" />
+            </LinearLayout>
+
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="楼栋" />
+
+
+                <Spinner
+                    android:id="@+id/sp_building"
+                    style="@style/public_input_edit" />
+
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="单元" />
+
+
+                <Spinner
+                    android:id="@+id/sp_unit"
+                    style="@style/public_input_edit" />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="房间号" />
+
+
+                <Spinner
+                    android:id="@+id/sp_roomNumber"
+                    style="@style/public_input_edit" />
+
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="户口本号" />
+
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_householdNo"
+                    style="@style/public_input_edit"
+                    fu:maxByteLength="20" />
+            </LinearLayout>
+
+            <!-- 户口信息 -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="户口信息" />
+
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="户主姓名*" />
+
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_householder"
+                    style="@style/public_input_edit"
+                    fu:maxByteLength="100" />
+
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="户主身份证" />
+
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_householderIdNo"
+                    style="@style/public_input_edit"
+                    fu:maxByteLength="18" />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="联系电话" />
+
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_telNo"
+                    style="@style/public_input_edit"
+                    fu:maxByteLength="50" />
+
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="责任医生" />
+
+                <Spinner
+                    android:id="@+id/sp_respDoctor"
+                    style="@style/public_input_edit" />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="家庭地址" />
+
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_address"
+                    style="@style/public_input_edit_single"
+                    android:background="@drawable/bg_corner"
+                    android:minHeight="40dp"
+                    fu:maxByteLength="200" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="户属性" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_householdProperty"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="户籍类型" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_householdType"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout
+                style="@style/public_info_layout"
+                android:orientation="horizontal">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="居住面积" />
+
+                <LinearLayout
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="1 居住面积"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small" />
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/et_dwellingArea"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:digits="0123456789."
+                        android:inputType="numberDecimal"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small"
+                        fu:maxByteLength="8,2" />
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="平方米  2 人均居住面积"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small" />
+
+                    <net.greatsoft.main.view.FuEditText
+                        android:id="@+id/et_dwellingAreaPer"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:digits="0123456789."
+                        android:inputType="numberDecimal"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small"
+                        fu:maxByteLength="8,2" />
+
+                    <net.greatsoft.main.view.FuTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="平方米"
+                        android:textColor="#000"
+                        android:textSize="@dimen/font_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="房屋类型" />
+
+                <LinearLayout
+                    android:id="@+id/ll_houseType"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="使用方式" />
+
+                <LinearLayout
+                    android:id="@+id/ll_kitchenUseMode"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="排风设备" />
+
+                <LinearLayout
+                    android:id="@+id/ll_kitchenExhaust"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="饮水" />
+
+                <LinearLayout
+                    android:id="@+id/ll_familyDrinkWater"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="燃料" />
+
+                <LinearLayout
+                    android:id="@+id/ll_fuelType"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="卫生厕所" />
+
+                <LinearLayout
+                    android:id="@+id/ll_sanitaryToilet"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="非卫生厕所" />
+
+                <LinearLayout
+                    android:id="@+id/ll_noSanitaryToilet"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="禽畜栏" />
+
+                <LinearLayout
+                    android:id="@+id/ll_livestockFence"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="垃圾处理" />
+
+                <LinearLayout
+                    android:id="@+id/ll_garbageDisposal"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="家用电器" />
+
+                <LinearLayout
+                    android:id="@+id/ll_householdAppliance"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="交通工具" />
+
+                <LinearLayout
+                    android:id="@+id/ll_transport"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#eaeaea"
+                android:minHeight="50dp">
+
+                <!--  证件  -->
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuGPPersonHistoryHeadView"
+                    android:layout_width="wrap_content"
+                    android:text="证件"
+                    android:textColor="#000" />
+
+                <net.greatsoft.main.view.FuButton
+                    android:id="@+id/btn_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:background="#8cca9b"
+                    android:text="添加"
+                    android:textColor="#000" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="证件类型"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_small" />
+
+                <Spinner
+                    android:id="@+id/sp_credentialType"
+                    style="@style/exam_list_edit"
+                    android:layout_width="110dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:minHeight="40dp" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="号码"
+                    android:textColor="#000"
+                    android:textSize="@dimen/font_small" />
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_credentialNo"
+                    style="@style/exam_list_edit"
+                    android:layout_width="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    fu:maxByteLength="50"
+                    android:background="@drawable/bg_corner"
+                    android:minHeight="40dp" />
+
+            </LinearLayout>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:background="#eaeaea"
+                android:minHeight="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:minHeight="50dp"
+                android:orientation="vertical">
+
+                <include layout="@layout/fu_card_item" />
+
+                <net.greatsoft.main.view.FuListView
+                    android:id="@+id/lv_card"
+                    android:scrollbars="none|vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout
+                style="@style/public_info_layout"
+                android:visibility="gone">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="建档机构" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_orgName"
+                    style="@style/public_input_edit_single" />
+
+            </LinearLayout>
+
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout
+                style="@style/public_info_layout"
+                android:visibility="gone">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="建档人" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_creator"
+                    style="@style/public_input_edit" />
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="建档时间" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_createTime"
+                    style="@style/public_input_edit" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

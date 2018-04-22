@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_btn_bg_pressed_color"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--  生活环境·厨房  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="生活环境·厨房"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_kitchenExhaust"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+
+            <!--  生活环境·燃料  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="生活环境·燃料"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_fuelType"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+            <!--  生活环境·饮水  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="生活环境·饮水"/>
+
+            <LinearLayout
+                android:id="@+id/ll_drinkWater"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+            <!--  生活环境·厕所  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="生活环境·厕所"/>
+
+            <LinearLayout
+                android:id="@+id/ll_toilet"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+            <!--  生活环境·禽畜栏  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="生活环境·禽畜栏"/>
+
+            <LinearLayout
+                android:id="@+id/ll_livestockFence"
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:minHeight="50dp"
+                android:layout_height="wrap_content">
+
+                <!--  证件  -->
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/FuGPPersonHistoryHeadView"
+                    android:layout_width="wrap_content"
+                    android:text="证件"/>
+
+                <net.greatsoft.main.view.FuButton
+                    android:id="@+id/btn_addCredential"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="#8cca9b"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="添加"/>
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                style="@style/title_public_edit_single"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:minHeight="55dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="证件类型"
+                    android:textSize="@dimen/font_small"/>
+
+                <Spinner
+                    android:id="@+id/sp_credentialType"
+                    style="@style/exam_list_edit"
+                    android:layout_width="110dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:minHeight="40dp"/>
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="号码"
+                    android:textSize="@dimen/font_small"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_credentialNo"
+                    style="@style/exam_list_edit"
+                    android:layout_width="150dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/bg_corner"
+                    android:minHeight="40dp"/>
+
+            </LinearLayout>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:minHeight="30dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:minHeight="50dp"
+                android:orientation="vertical">
+
+                <include layout="@layout/fu_card_item" />
+
+                <net.greatsoft.main.view.FuListView
+                    android:id="@+id/lv_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"/>
+
+            </LinearLayout>
+
+            <!--  建档  -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/FuGPPersonHistoryHeadView"
+                android:text="建档"/>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                android:minHeight="50dp"
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/font_small"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="建档机构"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_orgCode"
+                    android:background="@drawable/bg_corner"
+                    android:minHeight="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:minHeight="50dp"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_small"
+                android:layout_marginLeft="10dp"
+                android:minHeight="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:text="建档人"/>
+
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_creator"
+                android:layout_width="110dp"
+                android:minHeight="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_corner"
+                />
+
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical"
+                android:textSize="@dimen/font_small"
+                android:text="建档时间"/>
+
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_createTime"
+                android:layout_width="120dp"
+                android:minHeight="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/bg_corner"/>
+
+        </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

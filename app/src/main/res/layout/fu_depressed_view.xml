@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout"/>
+
+    <!-- 基本信息 -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_info"
+                    android:text="姓名"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/old_depression_name"
+                    style="@style/public_form_info"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_info"
+                    android:text="身份证号"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/old_depression_number"
+                    style="@style/public_form_info"/>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_info"
+                    android:text="出生日期"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/old_depressoin_birthday"
+                    style="@style/public_form_info"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_info"
+                    android:text="性别"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/old_depression_sex"
+                    style="@style/public_form_info"/>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 问题内容 -->
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="1、你对你的生活基本满意吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group1"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="2、你是否丧失了很多你的兴趣和爱好？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group2"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="3、你感到生活很空虚？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group3"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="4、你经常感到很无聊么？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group4"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="5、你对未来充满希望吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group5"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="6、你是否感觉到烦恼无法摆脱头脑中的想法？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group6"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="7、大部分时间你都精神抖擞吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group7"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="8、你是否觉得有什么不好的事情要发生而感到很害怕？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group8"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="9、大部分时间你都觉得很快乐？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group9"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="10、你经常感到无助？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group10"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="11、你是否经常感觉不安或者坐立不安？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group11"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="12、你是否宁愿呆在家里而不愿出去干新鲜事？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group12"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="13、你是否经常担心未来？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group13"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="14、你是否觉得你的记忆力有问题？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group14"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="15、你是否觉得现在活的很精彩？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group15"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="16、你经常感到垂头丧气无精打采？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group16"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="17、你是否感到你现在很没用？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group17"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="18、你是否为过去的事担心很多？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group18"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="19、你觉得生活很兴奋吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group19"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="20、你是否觉得很困难学习新鲜事物？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group20"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="21、你觉得精力充沛吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group21"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="22、你觉得你的现状是毫无希望吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group22"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="23、你是否觉得大部分人都比你活得好？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group23"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="24、你是否经常把小事情做得很糟糕？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group24"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="25、你经常有想哭的感觉吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group25"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="26、你对集中注意力有困难吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group26"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no26"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="27、你喜欢每天早晨起床的感觉吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group27"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="28、你是否宁愿不参加社交活动？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group28"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no28"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="29、你做决定容易吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group29"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_single"
+                    android:layout_marginLeft="10dp"
+                    android:text="30、你都头脑还和以前一样清楚吗？"/>
+
+                <RadioGroup
+                    android:id="@+id/old_dapression_group30"
+                    style="@style/public_form_info"
+                    android:orientation="horizontal">
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_yes30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="0"
+                        android:text="是"/>
+
+                    <net.greatsoft.main.view.FuRadioButton
+                        android:id="@+id/old_dapression_no30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:tag="1"
+                        android:text="否"/>
+                </RadioGroup>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_info"
+                    android:text="总评分："/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/old_dapression_count"
+                    style="@style/public_form_input"
+                    android:lines="1"
+                    android:text="0"/>
+
+                <View
+                    style="@style/public_form_info"/>
+
+                <View
+                    style="@style/public_form_info"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_form_linearlayout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_form_info"
+                    android:text="填表日期*"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/old_depression_write_date"
+                    style="@style/public_form_info"/>
+
+                <View
+                    style="@style/public_form_info"/>
+
+                <View
+                    style="@style/public_form_info"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <!-- 基本信息 -->
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_exam_info"
+                style="@style/title_public_center"
+                android:text="小区信息" />
+
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="村居委会" />
+
+                <Spinner
+                    android:id="@+id/sp_committee"
+                    style="@style/title_public_edit" />
+                
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="小区" />
+
+                <Spinner
+                    android:id="@+id/sp_residential"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="楼栋" />
+
+                
+
+                <Spinner
+                    android:id="@+id/sp_building"
+                    style="@style/title_public_edit" />
+
+                
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="单元" />
+
+                
+
+                <Spinner
+                    android:id="@+id/sp_unit"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="房间号" />
+
+                
+
+                <Spinner
+                    android:id="@+id/sp_roomNumber"
+                    style="@style/title_public_edit" />
+
+                
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="户口本号" />
+
+                
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_householdNo"
+                    fu:maxByteLength="20"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_center"
+                android:text="户口信息" />
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="户主姓名" />
+
+                
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_householder"
+                    fu:maxByteLength="100"
+                    style="@style/title_public_edit" />
+
+                
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="户主身份证" />
+
+                
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_householderIdNo"
+                    fu:maxByteLength="18"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="联系电话" />
+
+                
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_telNo"
+                    fu:maxByteLength="50"
+                    style="@style/title_public_edit" />
+
+                
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="责任医生" />
+
+                <Spinner
+                    android:id="@+id/sp_respDoctor"
+                    style="@style/title_public_edit" />
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="家庭地址" />
+
+                
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_address"
+                    fu:maxByteLength="200"
+                    style="@style/title_public_edit_single" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="户属性" />
+
+                
+
+                <LinearLayout
+                    android:id="@+id/ll_householdProperty"
+                    style="@style/title_public_edit_single"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal" />
+
+            <LinearLayout style="@style/title_public_linear">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/title_public_text"
+                    android:text="户籍类型" />
+
+                
+
+                <LinearLayout
+                    android:id="@+id/ll_householdType"
+                    style="@style/title_public_edit_single"
+                    android:orientation="horizontal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

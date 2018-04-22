@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout style="@style/main_linearlayout2"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@drawable/ba_01"
+                android:id="@+id/rl_rhsf"
+                style="@style/main_imageView">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@mipmap/ba_02"
+                android:id="@+id/rl_lgt"
+                style="@style/main_imageView">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@mipmap/ba_03"
+                android:id="@+id/rl_exam"
+                style="@style/main_imageView">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+        <LinearLayout android:paddingTop="5dp" android:paddingBottom="10dp" style="@style/main_linearlayout2">
+
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@mipmap/ba_04"
+                android:id="@+id/rl_member"
+                style="@style/main_imageView">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@mipmap/ba_05"
+                android:id="@+id/rl_yz"
+                style="@style/main_imageView">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@mipmap/ba_06"
+                android:id="@+id/rl_sl"
+                style="@style/main_imageView">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout style="@style/main_linearlayout2">
+
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@mipmap/ba_07"
+                android:id="@+id/rl_upload"
+                style="@style/main_imageView">
+
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@mipmap/ba_08"
+                android:id="@+id/rl_download"
+                style="@style/main_imageView">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_margin="5dp"
+                android:src="@mipmap/ba_09"
+                android:id="@+id/rl_family"
+                style="@style/main_imageView">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,924 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fu="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="口腔"/>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="口唇"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_lipExamResult"
+                    style="@style/public_input_layout_single"
+                    android:layout_width="280dp"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="齿列"/>
+
+                <LinearLayout
+                    style="@style/public_input_layout_single"
+                    android:layout_width="280dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        style="@style/public_info_layout"
+                        android:paddingLeft="0dp">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_dentitionType"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/bg_cb"
+                            android:drawablePadding="10dp"
+                            android:text="正常"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                    </LinearLayout>
+
+                    <include layout="@layout/fu_view_horizontal"/>
+
+                    <LinearLayout
+                        style="@style/public_info_layout"
+                        android:paddingLeft="0dp">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_LosetTeeth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/bg_cb"
+                            android:drawablePadding="10dp"
+                            android:text="缺齿"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_allLoseTeeth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/bg_cb"
+                            android:drawablePadding="10dp"
+                            android:text="全口"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="左上:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_loseUlTeethNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="左下:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_loseBlTeethNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="右上:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_loseUrTeethNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="右下:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_loseBrTeethNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"/>
+
+                    </LinearLayout>
+
+                    <include layout="@layout/fu_view_horizontal"/>
+
+                    <LinearLayout
+                        style="@style/public_info_layout"
+                        android:paddingLeft="0dp">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_isDecayedTooth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/bg_cb"
+                            android:drawablePadding="10dp"
+                            android:text="龋齿"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="左上:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_decayedUlToothNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="左下:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_decayedBlToothNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"
+
+                            />
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="右上:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_decayedUrToothNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"
+
+                            />
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="右下:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_decayedBrToothNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"/>
+
+                    </LinearLayout>
+
+                    <include layout="@layout/fu_view_horizontal"/>
+
+                    <LinearLayout
+                        style="@style/public_info_layout"
+                        android:paddingLeft="0dp">
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_isFalseTeeth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/bg_cb"
+                            android:drawablePadding="10dp"
+                            android:text="义齿(假牙)"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuCheckBox
+                            android:id="@+id/cb_allFalseTeeth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@null"
+                            android:button="@null"
+                            android:drawableLeft="@drawable/bg_cb"
+                            android:drawablePadding="10dp"
+                            android:text="全口"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:text="左上:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_falseUlTeethNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"/>
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="左下:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_falseBlTeethNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"
+
+                            />
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="右上:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_falseUrTeethNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"
+
+                            />
+
+                        <net.greatsoft.main.view.FuTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="右下:"
+                            android:textColor="#000"
+                            android:textSize="@dimen/font_small"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_falseBrTeethNum"
+                            android:layout_width="30dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:digits="0123456789"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textSize="@dimen/font_small"
+                            fu:maxByteLength="19"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="咽部"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_pharynxExamResult"
+                    style="@style/public_input_layout_single"
+                    android:layout_width="280dp"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 视力 听力 运动 -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="视力 听力 运动"/>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="左眼"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_leftOriginalEyesight"
+                    style="@style/public_input_edit"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    fu:maxByteLength="3,1"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="右眼"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_rightOriginalEyesight"
+                    style="@style/public_input_edit"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    fu:maxByteLength="3,1"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="矫正 左眼"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_leftCorrectEyesight"
+                    style="@style/public_input_edit"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    fu:maxByteLength="3,1"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="矫正 右眼"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_rightCorrectEyesight"
+                    style="@style/public_input_edit"
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    fu:maxByteLength="3,1"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="听力"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_hearingCode"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="运动功能"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_movementFunctionCode"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 查体 -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="查体"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="眼底"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_eyegroundCode"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="皮肤"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_skin"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="巩膜"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_scleral"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="淋巴结"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_lymph"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="肺--桶状胸"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_barrelChest"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="肺--呼吸音"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_lungSound"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="肺--罗音"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_lungRale"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="心脏--心率"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_heartRate"
+                    style="@style/public_input_edit"
+                    android:digits="0123456789"
+                    android:inputType="number"
+                    fu:maxByteLength="3,0"/>
+
+                <View
+                    style="@style/public_input_title"/>
+
+                <View
+                    style="@style/public_input_edit"
+                    android:background="@null"/>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="心脏--心律"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_heartRhythmType"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="心脏--杂音"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_heartMurmur"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 腹部 -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="腹部"/>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="压痛"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_abdominalTend"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="包块"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_abdominalMass"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="肝大"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_hepatauxe"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="脾大"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_splenomegaly"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="移动性浊音"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_abdominalDullness"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="下肢水肿"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_eole"
+                    style="@style/public_input_layout_single"
+                    android:orientation="horizontal"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="足背动脉搏动"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_pofda"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="肛门指诊"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_dre"
+                    style="@style/public_input_layout_single"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+
+            <LinearLayout style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:text="查体--其他"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_otherHealthExamResult"
+                    style="@style/public_input_edit_single"
+                    fu:maxByteLength="100"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                android:id="@+id/ll_women"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!-- 妇科 -->
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_info_title"
+                    android:text="妇科"/>
+
+                <include layout="@layout/fu_view_horizontal"/>
+
+                <LinearLayout style="@style/public_info_layout">
+
+                    <net.greatsoft.main.view.FuTextView
+                        style="@style/public_input_title"
+                        android:layout_width="40dp"
+                        android:text="乳腺"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_breast"
+                        style="@style/public_input_layout_single"
+                        android:layout_width="280dp"
+                        android:orientation="vertical"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/fu_view_horizontal"/>
+
+                <LinearLayout style="@style/public_info_layout">
+
+                    <net.greatsoft.main.view.FuTextView
+                        style="@style/public_input_title"
+                        android:layout_width="40dp"
+                        android:text="外阴"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_vulva"
+                        style="@style/public_input_layout_single"
+                        android:layout_width="280dp"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/fu_view_horizontal"/>
+
+                <LinearLayout style="@style/public_info_layout">
+
+                    <net.greatsoft.main.view.FuTextView
+                        style="@style/public_input_title"
+                        android:layout_width="40dp"
+                        android:text="阴道"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_vagina"
+                        style="@style/public_input_layout_single"
+                        android:layout_width="280dp"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/fu_view_horizontal"/>
+
+                <LinearLayout style="@style/public_info_layout">
+
+                    <net.greatsoft.main.view.FuTextView
+                        style="@style/public_input_title"
+                        android:layout_width="40dp"
+                        android:text="宫颈"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_cervix"
+                        style="@style/public_input_layout_single"
+                        android:layout_width="280dp"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/fu_view_horizontal"/>
+
+                <LinearLayout style="@style/public_info_layout">
+
+                    <net.greatsoft.main.view.FuTextView
+                        style="@style/public_input_title"
+                        android:layout_width="40dp"
+                        android:text="宫体"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_corpusuteri"
+                        style="@style/public_input_layout_single"
+                        android:layout_width="280dp"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+
+                <include layout="@layout/fu_view_horizontal"/>
+
+                <LinearLayout style="@style/public_info_layout">
+
+                    <net.greatsoft.main.view.FuTextView
+                        style="@style/public_input_title"
+                        android:layout_width="40dp"
+                        android:text="附件"/>
+
+                    <LinearLayout
+                        android:id="@+id/ll_adnexa"
+                        style="@style/public_input_layout_single"
+                        android:layout_width="280dp"
+                        android:orientation="horizontal"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

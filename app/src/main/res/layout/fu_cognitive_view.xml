@@ -1,0 +1,1071 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#fff"
+              android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout"/>
+
+    <!-- 基本信息 -->
+    <ScrollView
+        android:id="@+id/parent_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 姓名、性别、年龄 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="姓名"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_name"
+                    style="@style/public_input_edit"
+                    android:layout_width="120dp"
+                    app:maxByteLength="100"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="性        别"/>
+
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_sexCode"
+                    style="@style/public_input_edit"
+                    android:layout_width="120dp"
+                    android:focusable="false"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="年龄"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_age"
+                    style="@style/public_input_edit"
+                    android:layout_width="120dp"
+                    android:inputType="number"
+                    android:focusable="false"
+                    app:maxByteLength="3,0"/>
+
+                <View
+                style="@style/public_input_title"
+                android:layout_width="40dp" />
+
+                <View
+                    android:layout_width="120dp"
+                    android:background="@null"
+                    style="@style/public_input_edit" />
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:visibility="gone"
+                    android:text="既往病史"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_diseaseHistory"
+                    style="@style/public_input_edit"
+                    android:focusable="false"
+                    android:layout_width="120dp"
+                    android:visibility="gone"
+                    app:maxByteLength="1000"/>
+            </LinearLayout>
+
+            <include android:visibility="gone" layout="@layout/fu_view_horizontal"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="文化程度"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_educationCode"
+                    style="@style/public_input_layout_single"
+                    android:layout_width="280dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- I定向力 -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="I定向力(10分)"/>
+
+            <!-- 星期几 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="星期几"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_directiveRecord1"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore1"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 几号 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="几号"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_directiveRecord2"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore2"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 几月 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="几月"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/ey_directiveRecord3"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore3"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 什么季节 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="什么季节"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_directiveRecord4"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore4"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 那一年 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="哪一年"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_directiveRecord5"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore5"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 省市 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="省市"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_directiveRecord6"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore6"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 区县 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="区县"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_directiveRecord7"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore7"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 街道或乡 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="街道或乡"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_directiveRecord8"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore8"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 什么地方 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="什么地方"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_directiveRecord9"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore9"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 第几层楼 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="第几层楼"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_directiveRecord10"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_directiveScore10"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- II记忆力（3分） -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="II记忆力(3分)"/>
+
+            <!-- 皮球 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="皮球"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_memoryRecord1"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_memoryScore1"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 国旗 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="国旗"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_memoryRecord2"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_memoryScore2"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 树木 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="树木"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_memoryRecord3"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_memoryScore3"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- III注意力和计算力(5分) -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="III注意力和计算力(5分)"/>
+
+            <!-- 100-7 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="100-7"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_countRecord1"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_countScore1"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- -7 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="-7"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_countRecord2"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_countScore2"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- -7 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="-7"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_countRecord3"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_countScore3"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- -7 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="-7"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_countRecord4"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_countScore4"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- -7 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="-7"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_countRecord5"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_countScore5"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- IV回忆能力（3分） -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="IV回忆能力(3分)"/>
+
+            <!-- 皮球 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="皮球"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_recollectRecord1"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_recollectScore1"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 国旗 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="国旗"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_recollectRecord2"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_recollectScore2"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 树木 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="树木"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_recollectRecord3"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="210dp"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_recollectScore3"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 语言能力 -->
+            <net.greatsoft.main.view.FuTextView
+                style="@style/public_info_title"
+                android:text="V语言能力(9分)"/>
+
+            <!-- 命名能力 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="命名能力"/>
+
+                <LinearLayout
+                    style="@style/public_input_layout_single"
+                    android:layout_width="280dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="70dp">
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_namingQuestion1"
+                            style="@style/public_input_edit"
+                            android:layout_width="80dp"
+                            android:layout_marginRight="10dp"
+                            app:maxByteLength="100"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_namingRecord1"
+                            style="@style/public_input_edit_single"
+                            android:layout_width="140dp"
+                            android:layout_weight="3"
+                            app:maxByteLength="100"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_namingScore1"
+                            style="@style/public_input_layout"
+                            android:layout_width="70dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="70dp">
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_namingQuestion2"
+                            style="@style/public_input_edit"
+                            android:layout_width="80dp"
+                            android:layout_marginRight="10dp"
+                            app:maxByteLength="100"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_namingRecord2"
+                            style="@style/public_input_edit_single"
+                            android:layout_width="140dp"
+                            android:layout_weight="3"
+                            app:maxByteLength="100"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_namingScore2"
+                            style="@style/public_input_layout"
+                            android:layout_width="70dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 复述能力 -->
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="复述能力"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_languageQuestion"
+                    style="@style/public_input_edit"
+                    android:layout_width="80dp"
+                    android:layout_marginRight="10dp"
+                    app:maxByteLength="100"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_languageRecord"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="140dp"
+                    android:layout_weight="3"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_languageScore"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 三步能力 -->
+
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="三步命令"/>
+
+                <LinearLayout
+                    style="@style/public_input_layout_single"
+                    android:layout_width="280dp"
+                    android:layout_weight="6"
+                    android:orientation="vertical">
+
+                    <!-- 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="70dp">
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_threestepQuestion1"
+                            style="@style/public_input_edit"
+                            android:layout_width="80dp"
+                            android:layout_marginRight="10dp"
+                            app:maxByteLength="100"/>
+
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_threestepRecord1"
+                            style="@style/public_input_edit_single"
+                            android:layout_width="140dp"
+                            android:layout_weight="3"
+                            app:maxByteLength="100"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_threestepScore1"
+                            style="@style/public_input_layout"
+                            android:layout_width="70dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/fu_view_horizontal"/>
+
+                    <!-- 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="70dp">
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_threestepQuestion2"
+                            style="@style/public_input_edit"
+                            android:layout_width="80dp"
+                            android:layout_marginRight="10dp"
+                            app:maxByteLength="100"/>
+
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_threestepRecord2"
+                            style="@style/public_input_edit_single"
+                            android:layout_width="140dp"
+                            android:layout_weight="3"
+                            app:maxByteLength="100"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_threestepScore2"
+                            style="@style/public_input_layout"
+                            android:layout_width="70dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/fu_view_horizontal"/>
+
+                    <!-- 3 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="70dp">
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_threestepQuestion3"
+                            style="@style/public_input_edit"
+                            android:layout_width="80dp"
+                            android:layout_marginRight="10dp"
+                            app:maxByteLength="100"/>
+
+                        <net.greatsoft.main.view.FuEditText
+                            android:id="@+id/et_threestepRecord3"
+                            style="@style/public_input_edit_single"
+                            android:layout_width="140dp"
+                            android:layout_weight="3"
+                            app:maxByteLength="100"/>
+
+                        <LinearLayout
+                            android:id="@+id/ll_threestepScore3"
+                            style="@style/public_input_layout"
+                            android:layout_width="70dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:paddingLeft="10dp">
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 阅读能力 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="阅读能力"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_readQuestion"
+                    style="@style/public_input_edit"
+                    android:layout_width="80dp"
+                    android:layout_marginRight="10dp"
+                    app:maxByteLength="100"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_readRecord"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="140dp"
+                    android:layout_weight="3"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_readScore"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 书写能力 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="书写能力"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_writeQuestion"
+                    style="@style/public_input_edit"
+                    android:layout_width="80dp"
+                    android:layout_marginRight="10dp"
+                    app:maxByteLength="100"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_writeRecord"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="140dp"
+                    android:layout_weight="3"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_writeScore"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 结构能力 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="结构能力"/>
+
+                <ImageView
+                    style="@style/public_input_edit"
+                    android:src="@mipmap/oc_pic"
+                    android:scaleType="fitCenter"
+                    android:layout_width="80dp"
+                    android:layout_marginRight="10dp"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_structureRecord"
+                    style="@style/public_input_edit_single"
+                    android:layout_width="140dp"
+                    android:layout_weight="3"
+                    app:maxByteLength="100"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_structureScore"
+                    style="@style/public_input_layout"
+                    android:layout_width="70dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp">
+                </LinearLayout>
+            </LinearLayout>
+
+            <include layout="@layout/fu_view_horizontal"/>
+
+            <!-- 总分和时间 -->
+            <LinearLayout
+                style="@style/public_info_layout">
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="40dp"
+                    android:text="总分"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_totalScore"
+                    style="@style/public_input_edit"
+                    android:layout_width="120dp"
+                    android:layout_weight="2.5"
+                    android:focusable="false"
+                    app:maxByteLength="3"/>
+
+                <net.greatsoft.main.view.FuTextView
+                    style="@style/public_input_title"
+                    android:layout_width="70dp"
+                    android:text="评定时间*"/>
+
+                <net.greatsoft.main.view.FuEditText
+                    android:id="@+id/et_assessDate"
+                    style="@style/public_input_edit"
+                    android:layout_width="110dp"
+                    android:layout_weight="2.5"
+                    android:focusable="false"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

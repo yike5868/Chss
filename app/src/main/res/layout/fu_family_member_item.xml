@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="15dp"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <net.greatsoft.main.view.DashedLineView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal" />
+
+            <net.greatsoft.main.view.CircleButton
+                android:id="@+id/cb_relation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text=""
+                custom:cb_type="3" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:text=""
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/font_large" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#BFC1C2" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/font_middl" />
+
+                <View
+                    android:id="@+id/view_2"
+                    android:layout_width="1dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#BFC1C2" />
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:text=""
+                    android:textColor="@color/bg_black"
+                    android:textSize="@dimen/font_middl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <net.greatsoft.main.view.FuTextView
+                    android:id="@+id/tv_telNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#525354"
+                    android:textSize="@dimen/font_middl"
+                   />
+
+            </LinearLayout>
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_last_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:text="上次随访时间:暂无"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_type"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <net.greatsoft.main.view.CircleButton
+                android:id="@+id/cb_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:visibility="gone"
+                custom:cb_type="1" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_zt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#77000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_edit"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/btn_circle_red"
+            android:focusable="false"
+            android:text="编辑"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_latterly"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_circle_blue"
+            android:focusable="false"
+            android:text="迁出"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <net.greatsoft.main.view.FuButton
+            android:id="@+id/btn_delete"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/btn_circle_blue"
+            android:focusable="false"
+            android:text="删除"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

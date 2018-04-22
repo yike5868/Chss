@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/fu_public_title_layout" />
+
+    <net.greatsoft.main.view.FuButton
+        android:id="@+id/btn_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="档案"
+        android:textSize="38sp" />
+
+    <net.greatsoft.main.view.FuButton
+        android:id="@+id/btn_blood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="血压"
+        android:textSize="38sp" />
+
+    <net.greatsoft.main.view.FuButton
+        android:id="@+id/btn_sugar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="血糖"
+        android:textSize="38sp" />
+
+
+</LinearLayout>

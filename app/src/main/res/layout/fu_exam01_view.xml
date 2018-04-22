@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fu="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <!-- 基本信息 -->
+
+        <net.greatsoft.main.view.FuTextView
+            android:id="@+id/tv_exam_info"
+            style="@style/title_public_center"
+            android:text="基本信息" />
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/ll_exam_info"
+
+            style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="姓名 *" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_name"
+                style="@style/title_public_edit" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="编 号" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_healthExamNo"
+                style="@style/title_public_edit" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="体检日期" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:id="@+id/tv_healthExamDate"
+                style="@style/title_public_edit" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="责任医生" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <Spinner
+                android:id="@+id/sp_respDoctor"
+                style="@style/title_public_spinner" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="症状" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_exam_symptom"
+                style="@style/title_public_edit_single"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="体温" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_bodyTemperature"
+                style="@style/title_public_edit"
+                android:layout_width="60dp"
+                android:digits="0123456789."
+                android:inputType="number"
+                fu:maxByteLength="3,1" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="30dp"
+                android:layout_weight="0"
+                android:text="°C" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="脉率" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_pulseRate"
+                style="@style/title_public_edit"
+                android:layout_width="30dp"
+                android:digits="0123456789"
+                android:inputType="number"
+                fu:maxByteLength="3,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="60dp"
+                android:layout_weight="0"
+                android:text="次/分钟" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="呼吸频率" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_breathingRate"
+                style="@style/title_public_edit_single"
+                android:layout_width="100dp"
+                android:layout_weight="0"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="number"
+                fu:maxByteLength="3,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="172dp"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="次/分钟" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_weight="2"
+                android:text="左侧血压" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_lsbp"
+                style="@style/title_public_edit"
+                android:layout_width="15dp"
+                android:inputType="number"
+                fu:maxByteLength="3,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="/"
+                android:textSize="18sp" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_ldbp"
+                style="@style/title_public_edit"
+                android:layout_width="15dp"
+                android:inputType="number"
+                fu:maxByteLength="3,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="mmHg"
+                android:textColor="@color/bg_black"
+                android:textSize="14sp" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_weight="2"
+                android:text="右侧血压" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_rsbp"
+                style="@style/title_public_edit"
+                android:layout_width="15dp"
+                android:inputType="number"
+                fu:maxByteLength="3,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textSize="18sp" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_rdbp"
+                style="@style/title_public_edit"
+                android:layout_width="15dp"
+                android:inputType="number"
+                fu:maxByteLength="3,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="mmHg"
+                android:textColor="@color/bg_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="身高" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_height"
+                style="@style/title_public_edit"
+                android:layout_width="60dp"
+                android:digits="0123456789."
+                android:inputType="number"
+                fu:maxByteLength="4,1" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="30dp"
+                android:layout_weight="0"
+                android:text="cm" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="体重" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_weight"
+                style="@style/title_public_edit"
+                android:layout_width="60dp"
+                android:digits="0123456789."
+                android:inputType="number"
+                fu:maxByteLength="4,1" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="30dp"
+                android:layout_weight="0"
+                android:text="kg" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="腰围" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_waist"
+                style="@style/title_public_edit"
+                android:layout_width="60dp"
+                android:digits="0123456789."
+                android:inputType="number"
+                fu:maxByteLength="4,1" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="30dp"
+                android:layout_weight="0"
+                android:text="kg" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="体质指数" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_bmi"
+                style="@style/title_public_edit"
+                android:layout_width="30dp"
+                android:digits="0123456789."
+                android:inputType="number"
+                fu:maxByteLength="3,2" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="60dp"
+                android:layout_weight="0"
+                android:text="kg/m²" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/title_public_center"
+            android:text="老年人" />
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="老年人健康状态自我评估*" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_elderHealthAssess"
+                style="@style/title_public_edit_single"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="老年人生活自理能力自我评估*" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_elderSelfCareAssess"
+                style="@style/title_public_edit_single"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="老年人认知功能*" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_elderCognitionResult"
+                style="@style/title_public_edit_single"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="老年人情感状态*" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_elderEmotionalResult"
+                style="@style/title_public_edit_single"
+                android:orientation="vertical" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/title_public_center"
+            android:text="体育锻炼" />
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="锻炼频率" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_exerciseFreq"
+                style="@style/title_public_edit_single"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="每次锻炼时间" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_exerciseDurationMins"
+                style="@style/title_public_edit"
+                android:layout_width="30dp"
+                android:digits="0123456789"
+                android:inputType="number"
+                fu:maxByteLength="3,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="分钟"
+                android:textColor="@color/bg_black"
+                android:textSize="16sp" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="坚持锻炼时间" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_exerciseYear"
+                style="@style/title_public_edit"
+                android:layout_width="60dp"
+                android:digits="0123456789"
+                android:inputType="number"
+                fu:maxByteLength="2,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="年"
+                android:textColor="@color/bg_black"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="锻炼方式" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_exerciseWay"
+                style="@style/title_public_edit_single"
+                fu:maxByteLength="100" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="饮食习惯" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_eatingHabits"
+                style="@style/title_public_edit_single"
+                android:orientation="horizontal" />
+
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/title_public_center"
+            android:text="吸烟情况" />
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="吸烟情况" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_smokingStatus"
+                style="@style/title_public_edit_single"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="日吸烟量" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="50dp"
+                android:layout_weight="0"
+                android:text="平均" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_dailySmoking"
+                style="@style/title_public_edit_single"
+                android:layout_width="50dp"
+                android:layout_weight="0"
+                android:digits="0123456789"
+                android:inputType="number"
+                fu:maxByteLength="3,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="172dp"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="支" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="开始吸烟年龄" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_startSmokingAge"
+                style="@style/title_public_edit"
+                android:layout_width="60dp"
+                android:digits="0123456789"
+                android:inputType="number"
+                fu:maxByteLength="2,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="岁"
+                android:textColor="@color/bg_black"
+                android:textSize="16sp" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="戒烟年龄" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_stopSmokingAge"
+                style="@style/title_public_edit"
+                android:layout_width="60dp"
+                android:digits="0123456789"
+                android:inputType="number"
+                fu:maxByteLength="2,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="岁"
+                android:textColor="@color/bg_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/title_public_center"
+            android:text="饮酒情况" />
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="饮酒频率" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_drinkingFreq"
+                style="@style/title_public_edit_single"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="日饮酒量" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="50dp"
+                android:layout_weight="0"
+                android:text="平均" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_dailyDrinking"
+                style="@style/title_public_edit_single"
+                android:layout_width="50dp"
+                android:layout_weight="0"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:inputType="number"
+                fu:maxByteLength="3,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="3"
+                android:gravity="left"
+                android:text="两"
+                android:textColor="@color/bg_black"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="是否戒酒" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_stopDrinking"
+                style="@style/title_public_edit"
+                android:orientation="horizontal" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="戒酒年龄" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_stopDrinkingAge"
+                style="@style/title_public_edit"
+                android:digits="0123456789"
+                android:inputType="number"
+                fu:maxByteLength="2,0" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="开始饮酒年龄" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_startDrinkingAge"
+                style="@style/title_public_edit"
+                android:layout_width="60dp"
+                android:digits="0123456789"
+                android:inputType="number"
+                fu:maxByteLength="2,0" />
+
+            <net.greatsoft.main.view.FuTextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="岁"
+                android:textColor="@color/bg_black"
+                android:textSize="16sp" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="近一年内是否曾醉酒" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_drunkCode"
+                style="@style/title_public_edit"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="饮酒种类" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_typesOfDrinking"
+                style="@style/title_public_edit_single"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <net.greatsoft.main.view.FuTextView
+            style="@style/title_public_center"
+            android:text="职业病危害因素" />
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="危害因素 " />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_occupExposure"
+                style="@style/title_public_edit_single"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="工种" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_occupExposureWork"
+                fu:maxByteLength="100"
+                style="@style/title_public_edit" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="从业时间" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_occupExposureWorkYear"
+                style="@style/title_public_edit"
+                android:digits="0123456789"
+                android:inputType="number"
+                fu:maxByteLength="2,0"/>
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:layout_width="30dp"
+                android:layout_weight="0"
+                android:text="年" />
+        </LinearLayout>
+
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="粉尘" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_poisonDust"
+                style="@style/title_public_edit"
+                fu:maxByteLength="100" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="防护措施" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_poisonDust"
+                style="@style/title_public_edit"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="放射物质" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_poisonRadiogen"
+                style="@style/title_public_edit"
+                fu:maxByteLength="100" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="防护措施" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_poisonRadiogen"
+                style="@style/title_public_edit"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="物理物质" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_poisonPhysical"
+                style="@style/title_public_edit"
+                fu:maxByteLength="100" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="防护措施" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_poisonPhysical"
+                style="@style/title_public_edit"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="化学物质" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_poisonChemical"
+                style="@style/title_public_edit"
+                fu:maxByteLength="100" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="防护措施" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_poisonChemical"
+                style="@style/title_public_edit"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+
+        <LinearLayout style="@style/title_public_linear">
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="其他" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuEditText
+                android:id="@+id/et_poisonOthers"
+                style="@style/title_public_edit"
+                fu:maxByteLength="100" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <net.greatsoft.main.view.FuTextView
+                style="@style/title_public_text"
+                android:text="防护措施" />
+
+            <include layout="@layout/fu_view_vertical" />
+
+            <LinearLayout
+                android:id="@+id/ll_poisonOthers"
+                style="@style/title_public_edit"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <include layout="@layout/fu_view_horizontal" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="50dp">
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="疾病类型"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_middl" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_time"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="诊断时间"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_middl" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_method"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="治疗方式"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_middl" />
+
+    <net.greatsoft.main.view.FuTextView
+        android:id="@+id/tv_delete"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="操作"
+        android:textColor="@color/black"
+        android:textSize="@dimen/font_middl" />
+
+</LinearLayout>
